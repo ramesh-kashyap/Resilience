@@ -1,34 +1,5 @@
 @include('layouts.mainsite.header');
-                <div class="sd-header__hero row">
-                    <div class="col-sm-10 col-md-7 col-lg-5 sd-header__content pe-xl-8">
-                        <div>
-                            <h1 class="title title--light position-relative mb-6">Unlock the <span
-                                    class="title__bg title__bg--purple">Power</span> Resilience<br
-                                    class="d-none d-md-block" />Renewable<span
-                                    class="title__bg title__bg--violet"></span></h1>
-                            <p class="s18 mb-4">we create enduring wealth and
-                                    lifelong value for our stakeholders by delivering innovative, scalable, and
-                                    sustainable energy solutions that power the future.
-                                    We envision a world driven by clean, resilient energy systems.</p>
-                            <div class="button__overlay"><a href="index%EF%B9%96a=signup.html" target="_blank"
-                                    class="button button--primary ">
-                                    <div class="round"></div><span>Create Account</span>
-                                </a></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-5 col-lg-7 d-flex">
-                        <div class="position-relative">
-                            <div class="sd-header__box" data-aos="animation-scale-x-right"><img
-                                    srcset='{{ asset('') }}assets/app/images/header-box-img@2x.png 2x' src='app/images/header-box-img.png'>
-                                <p class="mb-0 white s23 col-10 medium">A Vision Committed To Ensuring Your Success.
-                                </p>
-                            </div>x
-                        </div>
-                        <div class="sd-header__img"><img src="{{ asset('') }}assets/app/images/firef.png" style="height: 1160px;"></div>
-                    </div>
-                </div>
-            </div>
-        </header>
+                
         <div class="sd-section sd-about" id="sd-about">
             <div class="container">
                 <div class="row d-flex gy-3 align-items-stretch">
