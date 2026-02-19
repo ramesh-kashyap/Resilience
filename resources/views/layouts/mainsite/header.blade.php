@@ -51,7 +51,7 @@
             <div class="offcanvas-body">
                 <div class="w-100 d-flex flex-column">
                     <ul class="navbar-menu navbar-menu--offcanvas mb-auto">
-                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=home.html"><svg
+                        <li class="nav-item"><a class="nav-link " href="{{ route('Index') }}"><svg
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Home</span></a></li>
@@ -59,7 +59,7 @@
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>About Us</span></a></li>
-                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=faq.html"><svg
+                        <li class="nav-item"><a class="nav-link " href="{{ route('faq') }}"><svg
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Faq</span></a></li>
@@ -96,10 +96,10 @@
                             src="{{ asset('') }}assets/app/images/resilience.png" style="height:60px"></a>
                     <ul class="navbar-menu ms-xl-8 me-auto d-none d-lg-flex w-auto">
                         <li class="nav-item d-none d-xl-block"><a class="nav-link "
-                                href="index%EF%B9%96a=home.html"><span>Home</span></a></li>
+                                href="{{ route('Index') }}"><span>Home</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="#sd-about"><span>About Us</span></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link  " href="index%EF%B9%96a=faq.html"><span>Faq</span></a>
+                        <li class="nav-item"><a class="nav-link  " href="{{ route('faq') }}"><span>Faq</span></a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#sd-plans"><span>Our Plans</span></a>
                         </li>
@@ -117,33 +117,4 @@
                                 <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
                             </svg><span>Sign Up</span></a>
                     </div>
-                </nav><div class="sd-header__hero row">
-                    <div class="col-sm-10 col-md-7 col-lg-5 sd-header__content pe-xl-8">
-                        <div>
-                            <h1 class="title title--light position-relative mb-6">Unlock the <span
-                                    class="title__bg title__bg--purple">Power</span> Resilience<br
-                                    class="d-none d-md-block" />Renewable<span
-                                    class="title__bg title__bg--violet"></span></h1>
-                            <p class="s18 mb-4">we create enduring wealth and
-                                    lifelong value for our stakeholders by delivering innovative, scalable, and
-                                    sustainable energy solutions that power the future.
-                                    We envision a world driven by clean, resilient energy systems.</p>
-                            <div class="button__overlay"><a href="index%EF%B9%96a=signup.html" target="_blank"
-                                    class="button button--primary ">
-                                    <div class="round"></div><span>Create Account</span>
-                                </a></div>
-                        </div>
-                    </div>
-                    <div class="col-sm-2 col-md-5 col-lg-7 d-flex">
-                        <div class="position-relative">
-                            <div class="sd-header__box" data-aos="animation-scale-x-right"><img
-                                    srcset='{{ asset('') }}assets/app/images/header-box-img@2x.png 2x' src='app/images/header-box-img.png'>
-                                <p class="mb-0 white s23 col-10 medium">A Vision Committed To Ensuring Your Success.
-                                </p>
-                            </div>x
-                        </div>
-                        <div class="sd-header__img"><img src="{{ asset('') }}assets/app/images/firef.png" style="height: 1160px;"></div>
-                    </div>
-                </div>
-            </div>
-        </header>
+                </nav>
