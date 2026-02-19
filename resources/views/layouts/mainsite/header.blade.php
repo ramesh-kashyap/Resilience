@@ -1,175 +1,149 @@
+<!-- HyipZona.com Studio: Expert in Turnkey HYIP Project Development -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="{{asset('')}}assets/images/favicon.png" />
-  <title>{{siteName()}} - Automated Trading, Real Profits</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="{{asset('')}}assets/style/style.css">
-  
-  <style>
-/* Your existing preloader styles */
-@keyframes loader_5191 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.square {
-  background: #ddd;
-  width: 10px;
-  height: 10px;
-  position: absolute; /* These will be relative to .loader if .loader is positioned */
-  top: 50%;
-  left: 50%;
-  margin-top: -5px;
-  margin-left: -5px;
-}
-
-#sq1 { margin-top: -25px; margin-left: -25px; animation: loader_5191 675ms ease-in-out 0s infinite alternate; }
-#sq2 { margin-top: -25px; animation: loader_5191 675ms ease-in-out 75ms infinite alternate; }
-#sq3 { margin-top: -25px; margin-left: 15px; animation: loader_5191 675ms ease-in-out 150ms infinite alternate; } /* Added alternate for consistency */
-#sq4 { margin-left: -25px; animation: loader_5191 675ms ease-in-out 225ms infinite alternate; }
-#sq5 { animation: loader_5191 675ms ease-in-out 300ms infinite alternate; }
-#sq6 { margin-left: 15px; animation: loader_5191 675ms ease-in-out 375ms infinite alternate; }
-#sq7 { margin-top: 15px; margin-left: -25px; animation: loader_5191 675ms ease-in-out 450ms infinite alternate; }
-#sq8 { margin-top: 15px; animation: loader_5191 675ms ease-in-out 525ms infinite alternate; }
-#sq9 { margin-top: 15px; margin-left: 15px; animation: loader_5191 675ms ease-in-out 600ms infinite alternate; }
-
-
-
-
-.preloader-container {
-    position: fixed; /* Cover the entire viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000; /* Or your desired background, e.g., #222 for dark */
-    z-index: 9999; /* Ensure it's on top of everything */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s; /* Fade out effect */
-    visibility: visible;
-}
-
-/* This class will be added by JS to hide the preloader */
-.preloader-container.hidden {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
-}
-
-/* The .loader div that holds the squares.
-   It needs to be relatively positioned for the absolute squares inside it. */
-.loader {
-    position: relative;
-    width: 50px; /* Adjust as needed to contain your squares */
-    height: 50px; /* Adjust as needed */
-}
-
-/* Make content visible after loading */
-.content {
-    padding: 20px;
-}
-.sbmt {
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    border: none;
-    border-radius: 30px;
-    background:linear-gradient(303deg, rgba(114, 161, 222) 0%, rgba(52, 0, 124) 100%);
-    color: #ffffff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px rgba(114, 161, 222, 0.168627451), inset 0 0 5px rgba(114, 161, 222, 0.2392156863);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    text-decoration: none;
-}
-button:hover, .button:hover {
-    background: linear-gradient(303deg, rgba(114, 161, 222) 0%, rgba(52, 0, 124) 100%);
-    transform: translateY(-2px);
-}
-.gradient-text {
-    display: inline-block;
-    background: linear-gradient(to right, #ffffff, #c979ff, #d6c507, #c1ff28, #b47606, #ff8e01, #ffffff);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    /*animation: gradient 2.5s linear infinite;*/
-}
-  </style>
-  
+    <meta charset="utf-8">
+    <title>Home | Template 32</title>
+    <!--<base href="https://gc.hyipzona.com/template-32/" src="https://gc.hyipzona.com/template-32/" />-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="og:locale" content="en-US">
+    <link rel="icon" type="image/x-icon" href="{{ asset('') }}assets/app/images/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('') }}assets/app/images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('') }}assets/app/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('') }}assets/app/images/favicons/favicon-48x48.png">
+    <link rel="manifest" href="https://gc.hyipzona.com/template-32/app/images/favicons/manifest.webmanifest">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="{{ asset('') }}assets/application-name">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="57x57" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="60x60" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="72x72" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="76x76" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="114x114" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="120x120" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="144x144" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="152x152" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-152x152.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="167x167" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-167x167.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="180x180" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-180x180.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="1024x1024" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-1024x1024.png">
+    <meta name="{{ asset('') }}assets/apple-mobile-web-app-capable" content="yes">
+    <meta name="{{ asset('') }}assets/apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="{{ asset('') }}assets/apple-mobile-web-app-title">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="{{ asset('') }}assets/app/images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="{{ asset('') }}assets/app/images/favicons/browserconfig.xml">
+    <link rel="yandex-tableau-widget" href="{{ asset('') }}assets/app/images/favicons/yandex-browser-manifest.json">
+    <link rel="stylesheet" href="{{ asset('') }}assets/app/css/style.css">
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 
 <body>
-  <div class="preloader-container">
-        <div class="loader">
-            <div class="square" id="sq1"></div>
-            <div class="square" id="sq2"></div>
-            <div class="square" id="sq3"></div>
-            <div class="square" id="sq4"></div>
-            <div class="square" id="sq5"></div>
-            <div class="square" id="sq6"></div>
-            <div class="square" id="sq7"></div>
-            <div class="square" id="sq8"></div>
-            <div class="square" id="sq9"></div>
+    <div class="sd-wrapper">
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="Id2"
+            aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button></div>
+            <div class="offcanvas-body">
+                <div class="w-100 d-flex flex-column">
+                    <ul class="navbar-menu navbar-menu--offcanvas mb-auto">
+                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=home.html"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sd-about"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>About Us</span></a></li>
+                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=faq.html"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Faq</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sd-plans"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Our Plans</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sd-affiliate"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Affiliate</span></a></li>
+                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=support.html"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Support</span></a></li>
+                    </ul>
+                    <div class="d-flex row gx-1">
+                        <div class="col"><a href="index%EF%B9%96a=login.html" class="button button--outline1 w-100  ">
+                                <div class="round"></div><span>Login</span>
+                            </a></div>
+                        <div class="col"><a href="index%EF%B9%96a=signup.html" class="button button--primary w-100 ">
+                                <div class="round"></div><svg class='svg-icon me-2'>
+                                    <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
+                                </svg><span>Sign Up</span>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-  <video class="video-background" src="{{asset('')}}assets/video/bg.mp4" type="video/mp4" muted autoplay loop playsinline poster="video/poster2.png"></video>
-
-  <div class="main-menu">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="{{route('user.dashboard')}}">
-            <img src="{{asset('')}}assets/images/logo1.png" class="logo" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-            <a class="nav-link active" href="{{ route('Index') }}">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('about-us') }}">About Us</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('faq') }}">FAQs</a>
-        </li>
-        <!-- <li class="nav-item">
-            <a class="nav-link" href="{{ route('news') }}">News</a>
-        </li> -->
-        <li class="nav-item">
-            <a class="nav-link" href="{{ route('contact-us') }}">Contact Us</a>
-        </li>
-    </ul>
-    <div class="d-flex gap-1">
-        <a href="{{ route('register') }}" class="sbmt">Register</a>
-        <a href="{{ route('login') }}" class="sbmt">Log In</a>
-    </div>
-</div>
-
-        </div>
-      </nav>
-    </div>
-  </div>
- 
-
+        <div id="animation-area" class="sd-area"></div>
+        <header class='sd-header sd-section '>
+            <div class="container">
+                <nav class="sd-header__top"><a href="index%EF%B9%96a=home.html" class="sd-header__logo col-auto"><img
+                            src="{{ asset('') }}assets/app/images/resilience.png" style="height:60px"></a>
+                    <ul class="navbar-menu ms-xl-8 me-auto d-none d-lg-flex w-auto">
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link "
+                                href="index%EF%B9%96a=home.html"><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sd-about"><span>About Us</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link  " href="index%EF%B9%96a=faq.html"><span>Faq</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#sd-plans"><span>Our Plans</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="#sd-affiliate"><span>Affiliate</span></a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="index%EF%B9%96a=support.html"><span>Support</span></a></li>
+                    </ul>
+                    <div class="sd-header__btns d-flex d-lg-none ms-auto"><a class="button button--empty"
+                            data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">Menu</a></div>
+                    <div class="sd-header__btns ms-auto d-none d-lg-flex"><a href="index%EF%B9%96a=login.html"
+                            class="button button--empty"><span>Login</span></a>
+                        <div class="sd-header__btn-devider"><span>or</span></div><a href="index%EF%B9%96a=signup.html"
+                            class="button button--empty"><svg class='svg-icon me-2'>
+                                <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
+                            </svg><span>Sign Up</span></a>
+                    </div>
+                </nav><div class="sd-header__hero row">
+                    <div class="col-sm-10 col-md-7 col-lg-5 sd-header__content pe-xl-8">
+                        <div>
+                            <h1 class="title title--light position-relative mb-6">Unlock the <span
+                                    class="title__bg title__bg--purple">Power</span> Resilience<br
+                                    class="d-none d-md-block" />Renewable<span
+                                    class="title__bg title__bg--violet"></span></h1>
+                            <p class="s18 mb-4">we create enduring wealth and
+                                    lifelong value for our stakeholders by delivering innovative, scalable, and
+                                    sustainable energy solutions that power the future.
+                                    We envision a world driven by clean, resilient energy systems.</p>
+                            <div class="button__overlay"><a href="index%EF%B9%96a=signup.html" target="_blank"
+                                    class="button button--primary ">
+                                    <div class="round"></div><span>Create Account</span>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-5 col-lg-7 d-flex">
+                        <div class="position-relative">
+                            <div class="sd-header__box" data-aos="animation-scale-x-right"><img
+                                    srcset='{{ asset('') }}assets/app/images/header-box-img@2x.png 2x' src='app/images/header-box-img.png'>
+                                <p class="mb-0 white s23 col-10 medium">A Vision Committed To Ensuring Your Success.
+                                </p>
+                            </div>x
+                        </div>
+                        <div class="sd-header__img"><img src="{{ asset('') }}assets/app/images/firef.png" style="height: 1160px;"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
