@@ -10,7 +10,7 @@
                                     lifelong value for our stakeholders by delivering innovative, scalable, and
                                     sustainable energy solutions that power the future.
                                     We envision a world driven by clean, resilient energy systems.</p>
-                            <div class="button__overlay"><a href="index%EF%B9%96a=signup.html" target="_blank"
+                            <div class="button__overlay"><a href="{{ route('register') }}"
                                     class="button button--primary ">
                                     <div class="round"></div><span>Create Account</span>
                                 </a></div>
@@ -33,7 +33,7 @@
             <div class="container">
                 <div class="row d-flex gy-3 align-items-stretch">
                     <div class=" col-lg-6  col-xl-6">
-                        <div class="sd-about__left"><a href="index%EF%B9%96a=signup.html" class="button-rounded"><img
+                        <div class="sd-about__left"><a href="{{ route('register') }}" class="button-rounded"><img
                                     src="{{ asset('') }}assets/app/images/svg/button-rounded-circle.svg" alt="">
                                 <div><svg class='svg-icon size-24'>
                                         <use xlink:href='app/images/svg/sprite.svg#arrow-right-up'></use>
@@ -89,7 +89,7 @@
                                 <p class="s18 mb-4 ">Our team of experts works tirelessly to develop cutting-edge
                                             technologies and solutions that meet the growing demand for
                                             clean energy.</p>
-                                <div class="button__overlay"><a href="index%EF%B9%96a=signup.html"
+                                <div class="button__overlay"><a href="{{ route('register') }}"
                                         class="button button--primary ">
                                         <div class="round"></div><span>Join Company</span>
                                     </a></div>
@@ -407,7 +407,7 @@
                                 <p class="s18 dark mb-6 ">Refer 7 direct members within the same or higher
                                     package within 7 days. Earn up to 30% Booster
                                     Bonus</p><a
-                                    href="index%EF%B9%96a=signup.html" target="_blank" class="button button--primary ">
+                                    href="{{ route('register') }}"  class="button button--primary ">
                                     <div class="round"></div><span>Join Affiliate</span>
                                 </a>
                             </div>

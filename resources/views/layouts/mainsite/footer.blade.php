@@ -5,7 +5,7 @@
                 <nav class="sd-footer__navbar">
                     <ul class="navbar-menu">
                         <li class="nav-item d-none d-xl-block"><a class="nav-link "
-                                href="index%EF%B9%96a=home.html"><span>Home</span></a></li>
+                                href="{{ route( 'Index') }}"><span>Home</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route( 'Index') }}#sd-about"><span>About Us</span></a>
                         </li>
                         <li class="nav-item"><a class="nav-link  " href="{{ route('faq') }}"><span>Faq</span></a>

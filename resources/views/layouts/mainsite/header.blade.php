@@ -77,10 +77,10 @@
                                 </svg><span>Support</span></a></li>
                     </ul>
                     <div class="d-flex row gx-1">
-                        <div class="col"><a href="index%EF%B9%96a=login.html" class="button button--outline1 w-100  ">
+                        <div class="col"><a href="{{ route('login') }}" class="button button--outline1 w-100  ">
                                 <div class="round"></div><span>Login</span>
                             </a></div>
-                        <div class="col"><a href="index%EF%B9%96a=signup.html" class="button button--primary w-100 ">
+                        <div class="col"><a href="{{ route('register') }}" class="button button--primary w-100 ">
                                 <div class="round"></div><svg class='svg-icon me-2'>
                                     <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
                                 </svg><span>Sign Up</span>
@@ -110,9 +110,9 @@
                     </ul>
                     <div class="sd-header__btns d-flex d-lg-none ms-auto"><a class="button button--empty"
                             data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">Menu</a></div>
-                    <div class="sd-header__btns ms-auto d-none d-lg-flex"><a href="index%EF%B9%96a=login.html"
+                    <div class="sd-header__btns ms-auto d-none d-lg-flex"><a href="{{ route('login') }}"
                             class="button button--empty"><span>Login</span></a>
-                        <div class="sd-header__btn-devider"><span>or</span></div><a href="index%EF%B9%96a=signup.html"
+                        <div class="sd-header__btn-devider"><span>or</span></div><a href="{{ route('register') }}"
                             class="button button--empty"><svg class='svg-icon me-2'>
                                 <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
                             </svg><span>Sign Up</span></a>

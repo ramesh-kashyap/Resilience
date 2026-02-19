@@ -175,11 +175,11 @@
                                 </div>
                             </div>
                             <hr class="sd-devider sd-devider--v1 mb-5">
-                            <div class="social"><a class="social__item" href="https://x.com" target="_blank"><svg class='svg-icon '>
+                            <div class="social"><a class="social__item" href="#"><svg class='svg-icon '>
                                         <use xlink:href='app/images/svg/sprite.svg#twitter'></use>
-                                    </svg></a><a class="social__item" href="https://t.me/" target="_blank"><svg class='svg-icon '>
+                                    </svg></a><a class="social__item" href="" ><svg class='svg-icon '>
                                         <use xlink:href='app/images/svg/sprite.svg#telegram'></use>
-                                    </svg></a><a class="social__item" href="https://medium.com" target="_blank"><svg class='svg-icon  size-32'>
+                                    </svg></a><a class="social__item" href="" ><svg class='svg-icon  size-32'>
                                         <use xlink:href='app/images/svg/sprite.svg#medium'></use>
                                     </svg></a></div>
                         </div>
