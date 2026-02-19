@@ -55,7 +55,7 @@
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#sd-about"><svg
+                        <li class="nav-item"><a class="nav-link" href="#sd-about"><svg
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>About Us</span></a></li>
