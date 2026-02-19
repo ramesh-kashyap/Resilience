@@ -1,50 +1,5 @@
-<!-- HyipZona.com Studio: Expert in Turnkey HYIP Project Development -->
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Sign Up | Template 32</title>
-    <!--<base href="https://gc.hyipzona.com/template-32/" src="https://gc.hyipzona.com/template-32/" />-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="og:locale" content="en-US">
-    <link rel="icon" type="image/x-icon" href="app/images/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="app/images/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="app/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="app/images/favicons/favicon-48x48.png">
-    <link rel="manifest" href="https://gc.hyipzona.com/template-32/app/images/favicons/manifest.webmanifest">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#fff">
-    <meta name="application-name">
-    <link rel="apple-touch-icon" sizes="57x57" href="app/images/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="app/images/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="app/images/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="app/images/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="app/images/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="app/images/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="app/images/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="app/images/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="app/images/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="app/images/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="app/images/favicons/apple-touch-icon-1024x1024.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title">
-    <meta name="msapplication-TileColor" content="#fff">
-    <meta name="msapplication-TileImage" content="app/images/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="app/images/favicons/browserconfig.xml">
-    <link rel="yandex-tableau-widget" href="app/images/favicons/yandex-browser-manifest.json">
-    <link rel="stylesheet" href="app/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-</head>
-
+@include('layouts.mainsite.header');
 <body>
     <div class="sd-wrapper sd-wrapper--form">
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="Id2"
@@ -421,5 +376,4 @@
         data-cf-beacon='{"version":"2024.11.0","token":"504d5c32df51454c8b5b363803bd9474","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
 </body>
-
-</html>
+@include('layouts.mainsite.footer');
