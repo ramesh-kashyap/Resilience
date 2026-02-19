@@ -164,7 +164,7 @@
         <nav id="sidebar" class="text-white p-3 d-none d-md-flex flex-column sidebar-narrow">
             <div class="sidebar-header nav-item text-center mb-4">
                 <a href="{{route('user.dashboard')}}" class="d-inline-block site-icon">
-                    <img src="{{asset('')}}assets\images\unique-world.png"  style="max-width: 200px; margin-left: 17px;height:65px">
+                    <img src="{{asset('')}}assets/app/images/resilience.png"  style="max-width: 200px; margin-left: 17px;height:65px">
 
                 </a>
             </div>

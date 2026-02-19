@@ -32,15 +32,11 @@
                             </div>
                            <span id="web3Status" >Wallet not Connected</span>
                             <div class="mb-4"></div>                            
-                            <div class="col-xl-12">
-                                <div class="form-group"><label><span>Referral Code</span></label>
-                                <input type="text" value="{{ $sponsor }}" id="sponsor" placeholder="Referral Code" class="form-control"></div>
-                            </div>
+                           
                             <div class="form-check form-switch mb-4">
-                                <input class="form-check-input" name=agree value=1 checked type="checkbox" id="flexSwitchCheckChecked" checked />
+                                <!-- <input class="form-check-input" name=agree value=1 checked type="checkbox" id="flexSwitchCheckChecked" checked /> -->
                                 <label class="form-check-label" for="flexSwitchCheckChecked">
-                                    <p class="s17 medium">I agree with <a href="index%EF%B9%96a=rules.html"
-                                            target="_blank">Terms and Conditions</a> </p>
+                                    <p class="s17 medium">This platform to access all the function of your account use auto login</p>
                                 </label></div>
                             <hr class="sd-devider mb-5">
                             <div class="d-sm-flex align-items-center">
@@ -122,7 +118,7 @@ async function connectWallet() {
         document.getElementById("web3Status").innerText =
             "Connected: " + connectedWallet.substring(0,6) + "..." + connectedWallet.slice(-4);
 
-        document.getElementById("btnText").innerText = "Register";
+        document.getElementById("btnText").innerText = "Login";
 
     } catch (error) {
         alert("Wallet connection failed");
@@ -130,13 +126,6 @@ async function connectWallet() {
 }
 
 async function registerUser() {
-
-    const referralCode = document.getElementById("sponsor").value.trim();
-
-    if (!referralCode) {
-        alert("Please enter referral code");
-        return;
-    }
 
     try {
         // Step 1: Get Nonce
@@ -148,7 +137,6 @@ async function registerUser() {
             },
             body: JSON.stringify({
                 wallet_address: connectedWallet,
-                sponsor: referralCode
             })
         });
 
@@ -187,7 +175,7 @@ async function registerUser() {
         }
 
     } catch (error) {
-        alert("Something jjj wrong");
+        alert("Something went wrong");
     }
 }
 </script>

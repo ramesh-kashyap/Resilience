@@ -10,10 +10,10 @@
                         </li>
                         <li class="nav-item"><a class="nav-link  " href="{{ route('faq') }}"><span>Faq</span></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-plans"><span>Our Plans</span></a>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}"><span>Our Plans</span></a>
                         </li>
                         <li class="nav-item"><a class="nav-link"
-                                href="{{ route('Index') }}#sd-affiliate"><span>Affiliate</span></a></li>
+                                href="{{ route('Index') }}"><span>Affiliate</span></a></li>
                         <li class="nav-item"><a class="nav-link  "
                                 href="{{ route('contact-us') }}"><span>Support</span></a></li>
                     </ul>

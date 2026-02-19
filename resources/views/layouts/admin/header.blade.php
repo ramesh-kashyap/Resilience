@@ -125,7 +125,7 @@ table#example {
         ***********************************-->
         <div class="nav-header">
             <a href="{{asset('')}}" class="brand-logo">
-              <img src="{{ asset('assets/images/unique-world.png') }}"
+              <img src="{{ asset('/assets/app/images/resilience.png') }}"
      class="responsive-img"
      alt="Unique World" />
 

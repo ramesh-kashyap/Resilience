@@ -397,7 +397,7 @@
                             protocol that leverages proprietary AI to generate institutional-grade yield in the digital
                             asset markets.</p>
                         <div class="flex gap-4 mt-6 reveal delay-3">
-                            <a href="{{asset('')}}login/index.html" class="btn primary text-sm text-white">Create Account</a>
+                            <a href="{{ route('register') }}" class="btn primary text-sm text-white">Create Account</a>
                             <a href="{{asset('')}}document.pdf" class="btn text-sm" target="_blank" rel="noopener">Our
                                 document</a>
                         </div>

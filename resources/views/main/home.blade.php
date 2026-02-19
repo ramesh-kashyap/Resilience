@@ -386,7 +386,7 @@
                                     <div class="col-9">
                                         <h4 class="title title-gradient-5 mb-3">How It Works</h4>
                                         <p class="mb-4">Refer 3 direct members within the same or higher package within 48 hours & Earn up to 20% Booster
-                                         Bonus</p><a href="index%EF%B9%96a=signup.html"
+                                         Bonus</p><a href="{{ route('register') }}"
                                             class="button button--outline me-auto  mt-auto">
                                             <div class="round"></div><span class="me-2">Look More</span><svg
                                                 class="svg-icon size-small ">

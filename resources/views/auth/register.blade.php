@@ -189,7 +189,7 @@ async function registerUser() {
         }
 
     } catch (error) {
-        alert("Something jjj wrong");
+        alert("Something went wrong");
     }
 }
 </script>

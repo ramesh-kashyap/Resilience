@@ -204,7 +204,6 @@ public function sendOtp(Request $request)
             'wallet_address' => 'required',
             'sponsor' => 'required'
         ]);
-
         $sponsor = User::where('username', $request->sponsor)->first();
 
         if (!$sponsor) {
@@ -219,7 +218,7 @@ public function sendOtp(Request $request)
             'nonce' => $nonce,
             'sponsor_id' => $sponsor->id
         ], 300);
-
+      
         return response()->json([
             'nonce' => $nonce
         ]);
@@ -228,35 +227,44 @@ public function sendOtp(Request $request)
 
     public function verify(Request $request)
     {
-        $nonceData = Cache::get('nonce_'.$request->wallet_address);
+         $request->validate([
+        'wallet_address' => 'required|string',
+        'signature' => 'required|string'
+    ]);
 
-        if (!$nonceData) {
-            return response()->json(['error' => 'Nonce expired']);
-        }
+    $wallet = strtolower($request->wallet_address);
 
-        $nonce = $nonceData['nonce'];
-        $sponsorId = $nonceData['sponsor_id'];
+    $nonceData = Cache::get('nonce_' . $wallet);
 
-        // $recoveredAddress = recoverSignature($nonce, $request->signature);
+    if (!$nonceData) {
+        return response()->json(['error' => 'Nonce expired'], 400);
+    }
 
-        // if (strtolower($recoveredAddress) !== strtolower($request->wallet_address)) {
-        //     return response()->json(['error' => 'Invalid signature']);
-        // }
+    $nonce = $nonceData['nonce'];
+    $sponsorId = $nonceData['sponsor_id'];
 
-        $user = User::firstOrCreate(
-            ['wallet_address' => $request->wallet_address],
-            [
-                'wallet_address'=>$request->wallet_address,
-                'name' => 'User_' . substr($request->wallet_address, 2, 6),
-                'username' => 'user_' . rand(10000,99999),
-                'sponsor' => $sponsorId,
-                'password' => bcrypt(Str::random(16))
-            ]
-        );
+    // 🔐 TODO: Add real signature verification here
 
-        auth()->login($user);
+    // ✅ Check if user already exists
+    $user = User::where('wallet_address', $wallet)->first();
 
-        return response()->json(['success' => true]);
+    if (!$user) {
+        // 🆕 Create only if new
+        $user = User::create([
+            'wallet_address' => $wallet,
+            'name' => 'User_' . substr($wallet, 2, 6),
+            'username' => 'user_' . rand(10000,99999),
+            'sponsor' => $sponsorId,
+            'password' => bcrypt(Str::random(16))
+        ]);
+    }
+
+    // 🧹 Remove nonce (important)
+    Cache::forget('nonce_' . $wallet);
+
+    auth()->login($user);
+
+    return response()->json(['success' => true]);
     }
 
 

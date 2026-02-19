@@ -46,7 +46,8 @@
     <div class="sd-wrapper">
         <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="Id2"
             aria-labelledby="staticBackdropLabel">
-            <div class="offcanvas-header"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                     aria-label="Close"></button></div>
             <div class="offcanvas-body">
                 <div class="w-100 d-flex flex-column">
@@ -55,7 +56,7 @@
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sd-about"><svg
+                        <li class="nav-item"><a class="nav-link" href=""><svg
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>About Us</span></a></li>
@@ -63,11 +64,11 @@
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Faq</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sd-plans"><svg
+                        <li class="nav-item"><a class="nav-link" href=""><svg
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Our Plans</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sd-affiliate"><svg
+                        <li class="nav-item"><a class="nav-link" href=""><svg
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Affiliate</span></a></li>
@@ -97,14 +98,14 @@
                     <ul class="navbar-menu ms-xl-8 me-auto d-none d-lg-flex w-auto">
                         <li class="nav-item d-none d-xl-block"><a class="nav-link "
                                 href="{{ route('Index') }}"><span>Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#sd-about"><span>About Us</span></a>
+                        <li class="nav-item"><a class="nav-link" href=""><span>About Us</span></a>
                         </li>
                         <li class="nav-item"><a class="nav-link  " href="{{ route('faq') }}"><span>Faq</span></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#sd-plans"><span>Our Plans</span></a>
+                        <li class="nav-item"><a class="nav-link" href=""><span>Our Plans</span></a>
                         </li>
                         <li class="nav-item"><a class="nav-link"
-                                href="#sd-affiliate"><span>Affiliate</span></a></li>
+                                href=""><span>Affiliate</span></a></li>
                         <li class="nav-item"><a class="nav-link"
                                 href="{{ route('contact-us') }}"><span>Support</span></a></li>
                     </ul>
