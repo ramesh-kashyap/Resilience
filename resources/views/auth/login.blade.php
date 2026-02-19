@@ -1,73 +1,198 @@
-<!DOCTYPE html>
-<html data-wf-domain="" data-wf-page="687f6ebea30244ec19600249" data-wf-site="687b1e181baaf79fcff18cdc" lang="en">
+@include('layouts.mainsite.header');
 
-<head>
-    <meta charset="utf-8" />
-    <title>Login - Unique World Funds</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="css/style%EF%B9%96201.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
-    <link href="images/fv.png" rel="shortcut icon" type="image/x-icon" />
-</head>
+<!-- <div class="sd-wrapper sd-wrapper--form"> -->
 
-<body class="body color-left">
-    <div class="page-wrapper"></div>
+    <div class="sd-section sd-form pb-8">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-8 order-2 order-lg-1">
+                    <div class="sd-form__left">
+                        <form class="position-relative">
 
-    <div class="section"
-        style="background: url('images/rd_1.png') no-repeat center center/cover; 
-            min-height: 100vh; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            padding-top: 20px !important; 
-            padding-bottom:20px !important;">
-        <div class="container w-password-page w-form">
-            <form action="{{ route('login') }}" method="post" id="email-form" name="email-form"
-                class="utility-page-form w-password-page">
-                    {{ csrf_field() }}
-                <div class="password-icom-wrap">
-                    <a href="{{ asset('') }}">
-                        <img style="width:auto;height:80px" src="{{asset('')}}assets\images\unique-world.png" alt="Logo" class="password-icon" />
+                            @php
+                                $sponsor = @$_GET['ref'];
+                                $name = \App\Models\User::where('username', $sponsor)->first();
+                            @endphp
+                            <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static"
+                                data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId"
+                                aria-hidden="true">
+                                <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                       
+                                        <div class="modal-footer"><a class="button button--outline1 ms-auto"
+                                                type="button" data-bs-dismiss="modal"><svg
+                                                    class='svg-icon size-16 red me-2 ms-n2'>
+                                                    <use xlink:href='app/images/svg/sprite.svg?1723368616#close'>
+                                                    </use>
+                                                </svg><span>Close</span></a>
+                                               
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                           <span id="web3Status" >Wallet not Connected</span>
+                            <div class="mb-4"></div>                            
+                            <div class="col-xl-12">
+                                <div class="form-group"><label><span>Referral Code</span></label>
+                                <input type="text" value="{{ $sponsor }}" id="sponsor" placeholder="Referral Code" class="form-control"></div>
+                            </div>
+                            <div class="form-check form-switch mb-4">
+                                <input class="form-check-input" name=agree value=1 checked type="checkbox" id="flexSwitchCheckChecked" checked />
+                                <label class="form-check-label" for="flexSwitchCheckChecked">
+                                    <p class="s17 medium">I agree with <a href="index%EF%B9%96a=rules.html"
+                                            target="_blank">Terms and Conditions</a> </p>
+                                </label></div>
+                            <hr class="sd-devider mb-5">
+                            <div class="d-sm-flex align-items-center">
+                                <!-- <button
+                                    class="button button--primary me-sm-3 mb-2 mb-sm-0 w-100" onclick="connectWallet()" type="submit">
+                                    <div class="round"></div><span> Register</span>
+                                </button> -->
+                                <button type="button"
+                                        id="walletBtn"
+                                        class="button button--primary w-100"
+                                        onclick="handleWallet()">
+                                    <span id="btnText">Connect Wallet</span>
+                                </button>
+                                
+                                <!-- <button type="button" class="button button--outline1  w-100 "
+                                    data-bs-toggle="modal" data-bs-target="#modalId"><svg
+                                        class='svg-icon primary size-16 ms-n2 me-2'>
+                                        <use xlink:href='app/images/svg/sprite.svg?1723368616#plus'></use>
+                                    </svg><span>Add Payment System</span>
+                                </button> -->
+                                </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2">                   
+                    <h2 class="title title--light mb-5">Login</h2>
+                    <p class="s18 mb-5 ">Complete your registration and start your journey towards successful
+                        cryptocurrency investment with us.</p>
+                    <div class="d-none d-lg-block">
+                        <hr class="sd-devider sd-devider--v1 mb-5">
+                        <h4 class="title title-gradient-1 mb-5">Already registered?</h4><a
+                            href="index%EF%B9%96a=login.html" class="button button--secondary me-auto  mt-auto">
+                            <div class="round"></div><span class="me-2">Log In</span><svg class="svg-icon size-small ">
+                                <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 d-block d-lg-none order-3 pt-6">
+                    <h4 class="title title-gradient-1 mb-4">Already registered?</h4><a href="index%EF%B9%96a=login.html"
+                        class="button button--secondary me-auto  mt-auto">
+                        <div class="round"></div><span class="me-2">Log In</span><svg class="svg-icon size-small ">
+                            <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                        </svg>
                     </a>
                 </div>
-                <div class="password-text-wrap">
-                    <h1 class="h3 mobile-text-center">Login</h1>
-                    <label class="paragraph-large text-center w-password-page">
-                        Login Your Account
-                    </label>
-                </div>
-                <div class="password-bottom">
-                    <div>
-                        <input class="text-field password w-password-page w-input" maxlength="256" name="username"
-                            placeholder="UserName" type="text" id="username" required />
-                    </div>
-                    <div style="padding-top: 20px;">
-                        <input class="text-field password w-password-page w-input" maxlength="256" name="password"
-                            placeholder="Password" type="password" id="password" required />
-                    </div>
-                    <div style="padding-top: 10px; text-align: right; font-size: 14px;">
-                        <a href="{{route('forgot-password')}}" style="text-decoration: none; color: #00ff8f">Forgot
-                            Password?</a>
-                    </div>
-                    <div style="padding-top: 10px;">
-                        <input type="submit" name="login" value="Login" style="width: 100%; cursor: pointer;"
-                            class="submit-button " />
-                    </div>
-                    <div style="padding-top: 15px; text-align: center; font-size: 14px;">
-                        Don’t have an account?
-                        <a href="{{route('register')}}" style="text-decoration: none; color: #00ff8f">Sign up</a>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
 
-    @include('partials.notify')
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
-        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        data-cf-beacon='{"version":"2024.11.0","token":"1e9d8afe95c748ecbe8fa121b1ca3021","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
-        crossorigin="anonymous"></script>
-</body>
+<script>
+let connectedWallet = null;
 
-</html>
+async function handleWallet() {
+
+    if (!connectedWallet) {
+        await connectWallet();
+    } else {
+        await registerUser();
+    }
+}
+
+async function connectWallet() {
+
+    if (!window.ethereum) {
+        alert("MetaMask not installed");
+        return;
+    }
+
+    try {
+        const accounts = await ethereum.request({
+            method: 'eth_requestAccounts'
+        });
+
+        connectedWallet = accounts[0];
+
+        document.getElementById("web3Status").innerText =
+            "Connected: " + connectedWallet.substring(0,6) + "..." + connectedWallet.slice(-4);
+
+        document.getElementById("btnText").innerText = "Register";
+
+    } catch (error) {
+        alert("Wallet connection failed");
+    }
+}
+
+async function registerUser() {
+
+    const referralCode = document.getElementById("sponsor").value.trim();
+
+    if (!referralCode) {
+        alert("Please enter referral code");
+        return;
+    }
+
+    try {
+        // Step 1: Get Nonce
+        const nonceRes = await fetch('/metamask/nonce', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+            body: JSON.stringify({
+                wallet_address: connectedWallet,
+                sponsor: referralCode
+            })
+        });
+
+        const nonceData = await nonceRes.json();
+
+        if (nonceData.error) {
+            alert(nonceData.error);
+            return;
+        }
+
+        // Step 2: Sign
+        const signature = await ethereum.request({
+            method: 'personal_sign',
+            params: [nonceData.nonce, connectedWallet]
+        });
+
+        // Step 3: Verify
+        const verifyRes = await fetch('/metamask/verify', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf_token() }}'
+            },
+            body: JSON.stringify({
+                wallet_address: connectedWallet,
+                signature: signature
+            })
+        });
+
+        const verifyData = await verifyRes.json();
+
+        if (verifyData.success) {
+            window.location.href = "/user/dashboard";
+        } else {
+            alert("Verification failed");
+        }
+
+    } catch (error) {
+        alert("Something jjj wrong");
+    }
+}
+</script>
+
+
+
+
+

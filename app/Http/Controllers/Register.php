@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Auth;
 use Redirect;
 use Carbon\Carbon;
 use Log;
+use Illuminate\Support\Str;
 use Hash;
 use DB;
 class Register extends Controller
@@ -194,6 +196,69 @@ public function sendOtp(Request $request)
     } 
     
     
+    public function getNonce(Request $request)
+    {
+        Log::info('Registration request received', $request->all());
+
+        $request->validate([
+            'wallet_address' => 'required',
+            'sponsor' => 'required'
+        ]);
+
+        $sponsor = User::where('username', $request->sponsor)->first();
+
+        if (!$sponsor) {
+            return response()->json([
+                'error' => 'Invalid referral code'
+            ]);
+        }
+
+        $nonce = Str::random(32);
+
+        Cache::put('nonce_'.$request->wallet_address, [
+            'nonce' => $nonce,
+            'sponsor_id' => $sponsor->id
+        ], 300);
+
+        return response()->json([
+            'nonce' => $nonce
+        ]);
+    }
+
+
+    public function verify(Request $request)
+    {
+        $nonceData = Cache::get('nonce_'.$request->wallet_address);
+
+        if (!$nonceData) {
+            return response()->json(['error' => 'Nonce expired']);
+        }
+
+        $nonce = $nonceData['nonce'];
+        $sponsorId = $nonceData['sponsor_id'];
+
+        // $recoveredAddress = recoverSignature($nonce, $request->signature);
+
+        // if (strtolower($recoveredAddress) !== strtolower($request->wallet_address)) {
+        //     return response()->json(['error' => 'Invalid signature']);
+        // }
+
+        $user = User::firstOrCreate(
+            ['wallet_address' => $request->wallet_address],
+            [
+                'wallet_address'=>$request->wallet_address,
+                'name' => 'User_' . substr($request->wallet_address, 2, 6),
+                'username' => 'user_' . rand(10000,99999),
+                'sponsor' => $sponsorId,
+                'password' => bcrypt(Str::random(16))
+            ]
+        );
+
+        auth()->login($user);
+
+        return response()->json(['success' => true]);
+    }
+
 
 
 

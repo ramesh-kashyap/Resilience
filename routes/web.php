@@ -53,6 +53,9 @@ Route::get('resetPassword', [App\Http\Controllers\Login::class, 'resetPassword']
 
 Route::post('/getUserName', [App\Http\Controllers\Register::class, 'getUserNameAjax'])->name('getUserName');
 Route::post('/registers', [App\Http\Controllers\Register::class, 'register'])->name('registers');
+
+Route::post('/metamask/nonce', [App\Http\Controllers\Register::class, 'getNonce'])->name('getNonce');
+Route::post('/metamask/verify', [App\Http\Controllers\Register::class, 'verify'])->name('verifySignature');
 // web.php
 Route::post('/contact-admin-mail', [App\Http\Controllers\Register::class, 'contactAdminMail'])
     ->name('contactAdminMail');
@@ -178,6 +181,7 @@ Route::post('/SubmitTicket',[App\Http\Controllers\UserPanel\Tickets::class,'Subm
 Route::get('/SupportMessage',[App\Http\Controllers\UserPanel\Tickets::class,'SupportMessage'])->name('user.SupportMessage');
 Route::get('/ViewMessage',[App\Http\Controllers\UserPanel\Tickets::class,'ViewMessage'])->name('user.ViewMessage');
 
+
 //end tickets
 
 });
@@ -236,6 +240,7 @@ Route::group(['middleware' => ['admin']], function ()
  Route::get('deposit-activities', [App\Http\Controllers\Admin\UserController::class, 'pendingActivities'])->name('admin.deposit-activities');
  Route::get('activities-list', [App\Http\Controllers\Admin\UserController::class, 'activities_list'])->name('admin.activities-list');
  Route::get('activities_submit', [App\Http\Controllers\Admin\UserController::class, 'activities_submit'])->name('admin.activities_submit');
+ 
  
  //end userController
 
