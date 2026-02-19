@@ -5,17 +5,17 @@
                 <nav class="sd-footer__navbar">
                     <ul class="navbar-menu">
                         <li class="nav-item d-none d-xl-block"><a class="nav-link "
-                                href="index%EF%B9%96a=home.html"><span>Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#sd-about"><span>About Us</span></a>
+                                href="{{ route( 'Index') }}"><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route( 'Index') }}#sd-about"><span>About Us</span></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link  " href="index%EF%B9%96a=faq.html"><span>Faq</span></a>
+                        <li class="nav-item"><a class="nav-link  " href="{{ route('faq') }}"><span>Faq</span></a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="index.html#sd-plans"><span>Our Plans</span></a>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-plans"><span>Our Plans</span></a>
                         </li>
                         <li class="nav-item"><a class="nav-link"
-                                href="index.html#sd-affiliate"><span>Affiliate</span></a></li>
+                                href="{{ route('Index') }}#sd-affiliate"><span>Affiliate</span></a></li>
                         <li class="nav-item"><a class="nav-link  "
-                                href="index%EF%B9%96a=support.html"><span>Support</span></a></li>
+                                href="{{ route('contact-us') }}"><span>Support</span></a></li>
                     </ul>
                 </nav>
                 <div class="d-flex justify-content-center mb-6">

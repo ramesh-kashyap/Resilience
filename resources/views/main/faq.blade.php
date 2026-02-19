@@ -13,32 +13,32 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="og:locale" content="en-US">
-    <link rel="icon" type="image/x-icon" href="app/images/favicons/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="app/images/favicons/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="app/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="app/images/favicons/favicon-48x48.png">
+    <link rel="icon" type="image/x-icon" href="{{ asset('') }}assets/app/images/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('') }}assets/app/images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('') }}assets/app/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('') }}assets/app/images/favicons/favicon-48x48.png">
     <link rel="manifest" href="https://gc.hyipzona.com/template-32/app/images/favicons/manifest.webmanifest">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#fff">
-    <meta name="application-name">
-    <link rel="apple-touch-icon" sizes="57x57" href="app/images/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="app/images/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="app/images/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="app/images/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="app/images/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="app/images/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="app/images/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="app/images/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="app/images/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="app/images/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="app/images/favicons/apple-touch-icon-1024x1024.png">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title">
+    <meta name="{{ asset('') }}assets/application-name">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="57x57" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="60x60" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="72x72" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="76x76" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="114x114" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="120x120" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="144x144" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="152x152" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-152x152.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="167x167" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-167x167.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="180x180" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-180x180.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="1024x1024" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-1024x1024.png">
+    <meta name="{{ asset('') }}assets/apple-mobile-web-app-capable" content="yes">
+    <meta name="{{ asset('') }}assets/apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="{{ asset('') }}assets/apple-mobile-web-app-title">
     <meta name="msapplication-TileColor" content="#fff">
-    <meta name="msapplication-TileImage" content="app/images/favicons/mstile-144x144.png">
-    <meta name="msapplication-config" content="app/images/favicons/browserconfig.xml">
-    <link rel="yandex-tableau-widget" href="app/images/favicons/yandex-browser-manifest.json">
+    <meta name="msapplication-TileImage" content="{{ asset('') }}assets/app/images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="{{ asset('') }}assets/app/images/favicons/browserconfig.xml">
+    <link rel="yandex-tableau-widget" href="{{ asset('') }}assets/app/images/favicons/yandex-browser-manifest.json">
     <link rel="stylesheet" href="{{ asset('') }}assets/app/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -53,29 +53,29 @@
                 <div class="w-100 d-flex flex-column">
                     <ul class="navbar-menu navbar-menu--offcanvas mb-auto">
                         <li class="nav-item"><a class="nav-link " href="{{ route('Index') }}"><svg class="svg-icon size-24 ">
-                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('about-us') }}#sd-about"><svg class="svg-icon size-24 ">
-                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-about"><svg class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>About Us</span></a></li>
                         <li class="nav-item"><a class="nav-link " href="{{ route(name: 'faq') }}"><svg class="svg-icon size-24 ">
-                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Faq</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-plans"><svg class="svg-icon size-24 ">
-                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Our Plans</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-affiliate"><svg class="svg-icon size-24 ">
-                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Affiliate</span></a></li>
-                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=support.html"><svg class="svg-icon size-24 ">
-                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                        <li class="nav-item"><a class="nav-link " href="{{ route('contact-us') }}"><svg class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Support</span></a></li>
                     </ul>
                     <div class="d-flex row gx-1">
                         <div class="col"><a href="index%EF%B9%96a=login.html" class="button button--outline1 w-100  ">
                                 <div class="round"></div><span>Login</span>
                             </a></div>
-                        <div class="col"><a href="index%EF%B9%96a=signup.html" class="button button--primary w-100 ">
+                        <div class="col"><a href="{{ route('register') }}" class="button button--primary w-100 ">
                                 <div class="round"></div><svg class='svg-icon me-2'>
                                     <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
                                 </svg><span>Sign Up</span>
@@ -87,18 +87,18 @@
         <div id="animation-area" class="sd-area"></div>
         <header class='sd-header sd-section '>
             <div class="container">
-                <nav class="sd-header__top"><a href="index%EF%B9%96a=home.html" class="sd-header__logo col-auto"><img src="app/images/svg/logo.svg"></a>
+                <nav class="sd-header__top"><a href="index%EF%B9%96a=home.html" class="sd-header__logo col-auto"><img src="{{ asset('') }}assets/app/images/svg/logo.svg"></a>
                     <ul class="navbar-menu ms-xl-8 me-auto d-none d-lg-flex w-auto">
                         <li class="nav-item d-none d-xl-block"><a class="nav-link " href="{{ route('Index') }}"><span>Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('about-us') }}#sd-about"><span>About Us</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-about"><span>About Us</span></a></li>
                         <li class="nav-item"><a class="nav-link  " href="{{ route('faq') }}"><span>Faq</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-plans"><span>Our Plans</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-affiliate"><span>Affiliate</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="index%EF%B9%96a=support.html"><span>Support</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('contact-us') }}"><span>Support</span></a></li>
                     </ul>
                     <div class="sd-header__btns d-flex d-lg-none ms-auto"><a class="button button--empty" data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">Menu</a></div>
                     <div class="sd-header__btns ms-auto d-none d-lg-flex"><a href="index%EF%B9%96a=login.html" class="button button--empty"><span>Login</span></a>
-                        <div class="sd-header__btn-devider"><span>or</span></div><a href="index%EF%B9%96a=signup.html" class="button button--empty"><svg class='svg-icon me-2'>
+                        <div class="sd-header__btn-devider"><span>or</span></div><a href="{{ route('register') }}" class="button button--empty"><svg class='svg-icon me-2'>
                                 <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
                             </svg><span>Sign Up</span></a>
                     </div>
@@ -132,7 +132,7 @@
                                                             </svg>
                                                             <p class="faq__question s25 white medium">Is ARCBOTIC AI TRADING LIMITED officially registered?</p>
                                                         </div>
-                                                        <p class="faq__answer mb-4">Yes, ARCBOTIC AI TRADING LIMITED is officially registered with the Companies House in the<b style="color:#fff;">United Kingdom</b>. Our company number is <b style="color:#fff;">15736519</b>. For more details, you can view our registration information on the UK Government's company information service.</p><a href="https://find-and-update.company-information.service.gov.uk/company/15736519" target="_blank" class="button button--secondary me-auto  mt-auto">
+                                                        <p class="faq__answer mb-4">Yes, ARCBOTIC AI TRADING LIMITED is officially registered with the Companies House in the<b style="color:#fff;">United Kingdom</b>. Our company number is <b style="color:#fff;">15736519</b>. For more details, you can view our registration information on the UK Government's company information service.</p><a href="#"  class="button button--secondary me-auto  mt-auto">
                                                             <div class="round"></div><span class="me-2"> Check Company</span><svg class="svg-icon size-small ">
                                                                 <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                                             </svg>
@@ -145,7 +145,7 @@
                                                             </svg>
                                                             <p class="faq__question s25 white medium">How do I create an account with Arcbotic AI Trading Limited?</p>
                                                         </div>
-                                                        <p class="faq__answer mb-4">Creating an account is easy. Just visit our website, click on the "Sign Up" button, and follow the instructions to fill out your registration.</p><a href="index%EF%B9%96a=signup.html" class="button button--secondary me-auto  mt-auto">
+                                                        <p class="faq__answer mb-4">Creating an account is easy. Just visit our website, click on the "Sign Up" button, and follow the instructions to fill out your registration.</p><a href="{{ route('register') }}" class="button button--secondary me-auto  mt-auto">
                                                             <div class="round"></div><span class="me-2">Sign Up</span><svg class="svg-icon size-small ">
                                                                 <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                                             </svg>

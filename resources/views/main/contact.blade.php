@@ -1,429 +1,226 @@
+<!-- HyipZona.com Studio: Expert in Turnkey HYIP Project Development -->
 
 <!DOCTYPE html>
-<html data-wf-domain="prouple.webflow.io" data-wf-page="62b18b38aba6ac1bfd691624"
-    data-wf-site="62a9646d33f56fbab98a976f">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Contacts - Ocean Funds</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="css/style%EF%B9%96201.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
-    <link href="images/fv.png" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+    <title>Contact Us | Template 32</title><!--<base href="https://gc.hyipzona.com/template-32/" src="https://gc.hyipzona.com/template-32/" />-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="og:locale" content="en-US">
+    <link rel="icon" type="image/x-icon" href="{{ asset('') }}assets/app/images/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('') }}assets/app/images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('') }}assets/app/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('') }}assets/app/images/favicons/favicon-48x48.png">
+    <link rel="manifest" href="https://gc.hyipzona.com/template-32/app/images/favicons/manifest.webmanifest">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="{{ asset('') }}assets/application-name">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="57x57" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="60x60" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="72x72" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="76x76" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="114x114" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="120x120" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="144x144" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="152x152" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-152x152.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="167x167" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-167x167.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="180x180" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-180x180.png">
+    <link rel="{{ asset('') }}assets/apple-touch-icon" sizes="1024x1024" href="{{ asset('') }}assets/app/images/favicons/apple-touch-icon-1024x1024.png">
+    <meta name="{{ asset('') }}assets/apple-mobile-web-app-capable" content="yes">
+    <meta name="{{ asset('') }}assets/apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="{{ asset('') }}assets/apple-mobile-web-app-title">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="{{ asset('') }}assets/app/images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="{{ asset('') }}assets/app/images/favicons/browserconfig.xml">
+    <link rel="yandex-tableau-widget" href="{{ asset('') }}assets/app/images/favicons/yandex-browser-manifest.json">
+    <link rel="stylesheet" href="{{ asset('') }}assets/app/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script><!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-<style>:root {
-        --primary-green: #00894d;
-        --primary-hover: #007a44;
-        --dark-bg: #1a1a1a;
-        --card-bg: #161616;
-        --border-color: #404040;
-        --text-muted: #9ca3af;
-        --transition: all 0.3s ease;
-        --glow: 0 0 20px rgba(0, 137, 77, 0.3);
-    }
 
-    .body-dark {
-        background: var(--dark-bg);
-    }
-
-    .contact-form.wf-section {
-        background: var(--dark-bg);
-        padding: 80px 0;
-        min-height: calc(100vh - 200px);
-    }
-
-    .section-inner-gap-100 {
-        padding: 40px 0;
-        width: 100%;
-    }
-
-    .contact-form.wf-section .container {
-        max-width: 700px;
-        margin: 0 auto;
-    }
-
-    .contact-form.wf-section .section-block {
-        text-align: center;
-    }
-
-    .contact-form.wf-section .section-title {
-        font-size: 42px;
-        font-weight: 700;
-        color: #ffffff;
-        margin-bottom: 20px;
-        line-height: 1.2;
-        text-align: center;
-    }
-
-    .margin-bottom-0 {
-        margin-bottom: 0;
-    }
-
-    .contact-form.wf-section .section-border-image {
-        margin-top: 15px;
-        margin-bottom: 40px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .section-border-image img {
-        height: 4px;
-        width: 60px;
-    }
-
-    .contact-form-block {
-        width: 100%;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .from-group-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        margin-bottom: 20px;
-    }
-
-    .default-input {
-        width: 100%;
-        background: var(--card-bg);
-        border: 2px solid var(--border-color);
-        border-radius: 12px;
-        color: #ffffff;
-        padding: 16px 20px;
-        font-size: 15px;
-        transition: var(--transition);
-        outline: none;
-    }
-
-    .default-input:focus {
-        background: var(--dark-bg);
-        border-color: var(--primary-green);
-        box-shadow: 0 0 0 0.25rem rgba(0, 137, 77, 0.15), var(--glow);
-        transform: translateY(-1px);
-    }
-
-    .default-input::placeholder {
-        color: var(--text-muted);
-    }
-
-    .default-text-area {
-        min-height: 150px;
-        resize: vertical;
-        font-family: inherit;
-    }
-
-    .button-default-blue {
-        width: 100%;
-        background: var(--primary-green);
-        color: #ffffff;
-        border: none;
-        border-radius: 12px;
-        padding: 16px 32px;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: var(--transition);
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
-
-    .button-default-blue:hover {
-        background: var(--primary-hover);
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(0, 137, 77, 0.4);
-    }
-
-    .button-default-blue:active {
-        transform: translateY(0);
-    }
-
-    .w-form-done {
-        background: rgba(16, 185, 129, 0.1);
-        border: 2px solid #10b981;
-        color: #10b981;
-        padding: 16px 20px;
-        border-radius: 12px;
-        margin-bottom: 20px;
-        display: none;
-    }
-
-    .w-form-fail {
-        background: rgba(239, 68, 68, 0.1);
-        border: 2px solid #ef4444;
-        color: #ef4444;
-        padding: 16px 20px;
-        border-radius: 12px;
-        margin-bottom: 20px;
-        display: none;
-    }
-
-    /* Alert Styles */
-    .alert {
-        padding: 16px 20px;
-        border-radius: 12px;
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-
-    .alert-success {
-        background: rgba(16, 185, 129, 0.1);
-        border: 2px solid #10b981;
-        color: #10b981;
-    }
-
-    .alert-danger {
-        background: rgba(239, 68, 68, 0.1);
-        border: 2px solid #ef4444;
-        color: #ef4444;
-    }
-
-    .alert-warning {
-        background: rgba(245, 158, 11, 0.1);
-        border: 2px solid #f59e0b;
-        color: #f59e0b;
-    }
-
-    .alert-info {
-        background: rgba(59, 130, 246, 0.1);
-        border: 2px solid #3b82f6;
-        color: #3b82f6;
-    }
-
-    /* Mobile Responsive */
-    @media (max-width: 768px) {
-        .contact-form.wf-section {
-            padding: 60px 0;
-        }
-
-        .section-title {
-            font-size: 32px;
-        }
-
-        .from-group-grid {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        .default-input {
-            padding: 14px 18px;
-            font-size: 14px;
-        }
-
-        .button-default-blue {
-            padding: 14px 28px;
-            font-size: 15px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .section-title {
-            font-size: 28px;
-        }
-
-        .default-input {
-            padding: 12px 16px;
-        }
-
-        .button-default-blue {
-            padding: 12px 24px;
-        }
-    }
-</style>
-
-<body class="body-dark">
-    <div class="page-wrapper">
-        <style>.show-sm-only {
-        display: flex !important;
-        padding-left:15px;
-    }
-    .show-sm-only .submit-button{
-        width:50%;
-    }
-    @media (min-width: 768px) {
-        .show-sm-only {
-            display: none !important;
-        }
-    }
-</style>
-
-<div class="gradient-box-wrap">
-    <img src="images/rd_1.png" loading="lazy" sizes="(max-width: 943px) 100vw, 943px" srcset="images/rd_1.png" alt=""
-        class="gradient" />
-</div>
-<section class="navbar-section">
-    <div class="container">
-        <div class="navbar-layout">
-            <div class="navbar-left"><a href="{{asset('')}}" aria-current="page"
-                    class="navber-logo-box w-inline-block"><img src="{{asset('')}}assets\images\unique-world.png" loading="lazy" alt=""
-                        class="dyxor-icon" /></a></div>
-            <div id="w-node-d7d145bd-668f-e8aa-3c17-842d5b9f4560-5b9f455b" class="navbar-center">
-                <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
-                    data-easing2="ease" role="banner" class="navbar w-nav">
-                    <div class="navbar-container w-container">
-                        <nav role="navigation" class="nav-menu-wrap w-nav-menu">
-                            <a href="{{asset('')}}" aria-current="page" class="menu-link w-nav-link">Home</a>
-                            <a href="{{asset('')}}#plans" class="menu-link w-nav-link">Plans</a>
-                            <a href="contact.html" class="menu-link w-nav-link">Contact Us</a>
-                            <div class="navbar-right show-sm-only">
-                <a href="{{route('login')}}" class="submit-button w-button">Login</a>
-                 <a href="{{route('register')}}" class="submit-button w-button">Signup</a>
-            </div>
-                        </nav>
-                        <div class="menu-button w-nav-button">
-                            <img src="images/menu.png" style="width:25px;" loading="lazy" alt="" class="menu-icon" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-           <div class="navbar-right tab-hide">
-                <a href="{{route('login')}}" class="submit-button w-button">Login</a>
-                 <a href="{{route('register')}}" class="submit-button w-button">Signup</a>
-            </div>
-        </div>
-    </div>
-</section>
-        <div class="contact-form wf-section">
-            <div class="section-inner-gap-100">
-                <div class="container w-container">
-                    <div class="section-block">
-                        <div class="scroll-slide-up-animate">
-                            <h2 class="section-title margin-bottom-0">Get in touch</h2>
-                            <div class="section-border-image">
-                                <img src="https://oceanunds.live/images/frontend/underline.svg" alt="underline" />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="scroll-slide-up-animate">
-                        <div class="contact-form">
-                            
-                                @if(session('success'))
-        <div class="alert alert-success">{{ session('success') }}</div>
-    @endif
-
-    @if ($errors->any())
-        <div class="alert alert-danger">{{ $errors->first() }}</div>
-    @endif
-
-                            
-                            <form id="email-form" name="email-form"
-      method="POST"
-      action="{{ route('contactAdminMail') }}"
-      class="contact-form-block">
-
-    @csrf
-
-    <div class="form-group from-group-grid">
-        <input type="text" class="default-input w-input" name="name"
-            placeholder="Full Name" required />
-
-        <input type="email" class="default-input w-input" name="email"
-            placeholder="Email" required />
-    </div>
-
-    <div class="form-group">
-        <input type="text" class="default-input w-input" name="topic"
-            placeholder="Subject" required />
-    </div>
-
-    <div class="form-group">
-        <textarea placeholder="Message" name="message"
-            required class="default-input default-text-area w-input"></textarea>
-    </div>
-
-    <div class="form-group">
-        <input type="submit" value="Submit"
-            class="button-default-blue contact-form-button w-button" />
-    </div>
-</form>
-
-
-
-
-                            <div class="w-form-done">
-                                <div>Thank you! Your submission has been received!</div>
-                            </div>
-                            <div class="w-form-fail">
-                                <div>Oops! Something went wrong while submitting the form.</div>
-                            </div>
-                        </div>
+<body>
+    <div class="sd-wrapper sd-wrapper--form">
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="Id2" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header"><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button></div>
+            <div class="offcanvas-body">
+                <div class="w-100 d-flex flex-column">
+                    <ul class="navbar-menu navbar-menu--offcanvas mb-auto">
+                        <li class="nav-item"><a class="nav-link " href="{{ route('Index') }}"><svg class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-about"><svg class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>About Us</span></a></li>
+                        <li class="nav-item"><a class="nav-link " href="{{ route(name: 'faq') }}"><svg class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Faq</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-plans"><svg class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Our Plans</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-affiliate"><svg class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Affiliate</span></a></li>
+                        <li class="nav-item"><a class="nav-link " href="{{ route('contact-us') }}"><svg class="svg-icon size-24 ">
+                                    <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Support</span></a></li>
+                    </ul>
+                    <div class="d-flex row gx-1">
+                        <div class="col"><a href="index%EF%B9%96a=login.html" class="button button--outline1 w-100  ">
+                                <div class="round"></div><span>Login</span>
+                            </a></div>
+                        <div class="col"><a href="index%EF%B9%96a=signup.html" class="button button--primary w-100 ">
+                                <div class="round"></div><svg class='svg-icon me-2'>
+                                    <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
+                                </svg><span>Sign Up</span>
+                            </a></div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <section class="section">
-    <div class="container">
-        <div class="footer-layout">
-            <div class="footer-box-wrap">
-                <div class="footer-top-wrap">
-                    <div class="footer-content-wrap">
-                        <div class="footer-link-left-wrap">
-                            <div class="footer-typography-wrap">
-                                <div class="footer-logo-link-wrap"><a href="{{asset('')}}" aria-current="page"
-                                        class="logo-box w-inline-block w--current"><img src="{{asset('')}}assets\images\unique-world.png"
-                                            loading="lazy" data-w-id="6e0a4b74-bd89-a600-8f27-bd02127a9302" alt=""
-                                            class="footer-logo-image" /></a></div>
-                                <div class="typography-text-left">
-                                    <div data-w-id="6e0a4b74-bd89-a600-8f27-bd02127a9304"
-                                        class="paragraph-large tab-text-center">Subscribe now to receive the
-                                        latest blockchain news, product updates, and insights directly to your
-                                        inbox.</div>
+        <div id="animation-area" class="sd-area"></div>
+        <header class='sd-header sd-section '>
+            <div class="container">
+                <nav class="sd-header__top"><a href="index%EF%B9%96a=home.html" class="sd-header__logo col-auto"><img src="{{ asset('') }}assets/app/images/svg/logo.svg"></a>
+                    <ul class="navbar-menu ms-xl-8 me-auto d-none d-lg-flex w-auto">
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link " href="{{ route('Index') }}"><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-about"><span>About Us</span></a></li>
+                        <li class="nav-item"><a class="nav-link  " href="{{ route('faq') }}"><span>Faq</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-plans"><span>Our Plans</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-affiliate"><span>Affiliate</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('contact-us') }}"><span>Support</span></a></li>
+                    </ul>
+                    <div class="sd-header__btns d-flex d-lg-none ms-auto"><a class="button button--empty" data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">Menu</a></div>
+                    <div class="sd-header__btns ms-auto d-none d-lg-flex"><a href="index%EF%B9%96a=login.html" class="button button--empty"><span>Login</span></a>
+                        <div class="sd-header__btn-devider"><span>or</span></div><a href="index%EF%B9%96a=signup.html" class="button button--empty"><svg class='svg-icon me-2'>
+                                <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
+                            </svg><span>Sign Up</span></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="sd-section sd-form pb-8">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-8 order-2 order-lg-1">
+                        <div class="sd-form__left">
+                            <script language=javascript>
+                                function checkform() {
+                                    if (document.mainform.name.value == '') {
+                                        alert("Please type your full name!");
+                                        document.mainform.name.focus();
+                                        return false;
+                                    }
+                                    if (document.mainform.email.value == '') {
+                                        alert("Please enter your e-mail address!");
+                                        document.mainform.email.focus();
+                                        return false;
+                                    }
+                                    if (document.mainform.message.value == '') {
+                                        alert("Please type your message!");
+                                        document.mainform.message.focus();
+                                        return false;
+                                    }
+                                    return true;
+                                }
+                            </script>
+                            <form method="post" name="mainform" class="form" onsubmit="return checkform()" class="position-relative w-100"><input type="hidden" name="form_id" value="17713294235524"><input type="hidden" name="form_token" value="7949eb300116662b2459f4f6be06c58d"><input type="hidden" name="a" value="support"><input type="hidden" name="action" value="send">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group has-feedback"><label><i class="form-icon"><svg class="svg-icon size-16">
+                                                        <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg?1723358029#username"></use>
+                                                    </svg></i><span>Your Name</span></label><input type="text" name="name" value="" class="form-control" /></div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group has-feedback"><label><i class="form-icon"><svg class="svg-icon size-16">
+                                                        <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg?1723358029#email1"></use>
+                                                    </svg></i><span>Your Email</span></label><input type="text" name="email" value="" class="form-control" /></div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div data-w-id="6e0a4b74-bd89-a600-8f27-bd02127a9310" class="blockchain-logo-image">
-                                <a href="https://t.me/" class="logo-input-fild w-inline-block" target="_blank">
-                                    <img src="telegram.png" loading="lazy" alt="" class="linked-in-teg" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="footer-link-right-wrap">
-                            <div data-w-id="6e0a4b74-bd89-a600-8f27-bd02127a9318" class="footer-teg-left-wrap">
-                                <div class="footer-teg-text"><a href="{{asset('')}}" aria-current="page"
-                                        class="footer-menu w--current">Home</a>
-                                    <a href="{{asset('')}}#plans" class="footer-menu">Plans</a>
-                                    <a href="{{route('contact-us')}}" class="footer-menu">Contact Us</a>
-                                </div>
-                            </div>
-                            <div data-w-id="6e0a4b74-bd89-a600-8f27-bd02127a9326" class="footer-teg-right-wrap">
-                                <div class="footer-teg-text">
-                                    <a href="{{route('login')}}" class="footer-menu">Login</a>
-                                    <a href="{{route('register')}}" class="footer-menu">Signup</a>
-                                </div>
-                            </div>
+                                <div class="form-group  has-feedback"><label><span>Your message</span></label><textarea name="message" class="form-control" required></textarea></div>
+                                <div class="mb-4"></div><button class="button button--primary" type=submit>
+                                    <div class="round"></div><span>Send</span>
+                                </button>
+                            </form>
                         </div>
                     </div>
+                    <div class="col-lg-4 order-1 order-lg-2">
+                        <h5 class="title  title--light title--right title--other  mb-4"><span>Support</span><img src="{{ asset('') }}assets/app/images/svg/h5-header-svg-v3.svg"></h5>
+                        <h2 class="title title--light mb-5">Contact Us</h2>
+                        <p class="s18 mb-5 ">Welcome to the Support Center at Template 32 Limited. Our goal is to provide you with comprehensive support and solutions to ensure your satisfaction and success with our products.</p>
+                        <div class="d-none d-lg-block">
+                            <hr class="sd-devider sd-devider--v1 mb-5">
+                            <div class="d-flex align-items-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="me-3" viewBox="0 0 32 32" width="46" height="46">
+                                    <path fill="#78872a" d="M16 24a3.35 3.35 0 0 1-2.85-1.59C9.73 17 8 13.14 8 11a8 8 0 0 1 16 0c0 2.14-1.73 6-5.15 11.45A3.35 3.35 0 0 1 16 24Zm0-19a6 6 0 0 0-6 6c0 1.69 1.76 5.47 4.84 10.39a1.4 1.4 0 0 0 2.32 0C20.24 16.47 22 12.69 22 11a6 6 0 0 0-6-6Z" class="color1b1a1c svgShape"></path>
+                                    <path fill="#42364e" d="M16 15a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm0-6a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm8 20H8a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2z" class="color6d6e71 svgShape"></path>
+                                </svg>
+                                <div>
+                                    <p class="mb-1">Company Address</p>
+                                    <p class="s21 white medium">90 Whytecliffe Road North, Purley, England, CR8 2AR</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" class="me-3" viewBox="0 0 32 32" width="46" height="46">
+                                    <g data-name="Mail, Email, Message">
+                                        <path fill="#42364e" d="M28 26H4a1 1 0 0 1-1-1V14a1 1 0 0 1 2 0v10h22V14a1 1 0 0 1 2 0v11a1 1 0 0 1-1 1Z"></path>
+                                        <path fill="#7a3ad8" d="M16 18a1 1 0 0 1-.6-.2l-12-9A1 1 0 0 1 4 7h24a1 1 0 0 1 .6 1.8l-12 9a1 1 0 0 1-.6.2ZM7 9l9 6.75L25 9Z"></path>
+                                    </g>
+                                </svg>
+                                <div>
+                                    <p class="mb-1">Company Email</p>
+                                    <p class="s19 white medium"><a href="https://gc.hyipzona.com/cdn-cgi/l/email-protection#a8c6c7dacdd8c4d1e8cfcb86c0d1c1d8d2c7c6c986cbc7c5" style="color:#fff;"><span class="__cf_email__" data-cfemail="85ebeaf7e0f5e9fcc5e2e6abedfcecf5ffeaebe4abe6eae8">[email&#160;protected]</span></a></p>
+                                </div>
+                            </div>
+                            <hr class="sd-devider sd-devider--v1 mb-5">
+                            <div class="social"><a class="social__item" href="#"><svg class='svg-icon '>
+                                        <use xlink:href='app/images/svg/sprite.svg#twitter'></use>
+                                    </svg></a><a class="social__item" href="" ><svg class='svg-icon '>
+                                        <use xlink:href='app/images/svg/sprite.svg#telegram'></use>
+                                    </svg></a><a class="social__item" href="" ><svg class='svg-icon  size-32'>
+                                        <use xlink:href='app/images/svg/sprite.svg#medium'></use>
+                                    </svg></a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-block d-lg-none order-3 pt-6">
+                        <div class="d-flex align-items-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="me-3" viewBox="0 0 32 32" width="46" height="46">
+                                <path fill="#78872a" d="M16 24a3.35 3.35 0 0 1-2.85-1.59C9.73 17 8 13.14 8 11a8 8 0 0 1 16 0c0 2.14-1.73 6-5.15 11.45A3.35 3.35 0 0 1 16 24Zm0-19a6 6 0 0 0-6 6c0 1.69 1.76 5.47 4.84 10.39a1.4 1.4 0 0 0 2.32 0C20.24 16.47 22 12.69 22 11a6 6 0 0 0-6-6Z" class="color1b1a1c svgShape"></path>
+                                <path fill="#42364e" d="M16 15a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm0-6a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm8 20H8a1 1 0 0 1 0-2h16a1 1 0 0 1 0 2z" class="color6d6e71 svgShape"></path>
+                            </svg>
+                            <div>
+                                <p class="mb-1">Company Address</p>
+                                <p class="s21 white medium">90 Whytecliffe Road North, Purley, England, CR8 2AR</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" class="me-3" viewBox="0 0 32 32" width="46" height="46">
+                                <g data-name="Mail, Email, Message">
+                                    <path fill="#42364e" d="M28 26H4a1 1 0 0 1-1-1V14a1 1 0 0 1 2 0v10h22V14a1 1 0 0 1 2 0v11a1 1 0 0 1-1 1Z"></path>
+                                    <path fill="#7a3ad8" d="M16 18a1 1 0 0 1-.6-.2l-12-9A1 1 0 0 1 4 7h24a1 1 0 0 1 .6 1.8l-12 9a1 1 0 0 1-.6.2ZM7 9l9 6.75L25 9Z"></path>
+                                </g>
+                            </svg>
+                            <div>
+                                <p class="mb-1">Company Email</p>
+                                <p class="s19 white medium"><a href="https://gc.hyipzona.com/cdn-cgi/l/email-protection#c8bbbdb8b8a7babc88a9baabaaa7bca1abe6aba7a5" style="color:#fff;"><span class="__cf_email__" data-cfemail="2655535656495452664754454449524f450845494b">[email&#160;protected]</span></a></p>
+                            </div>
+                        </div>
+                        <hr class="sd-devider sd-devider--v1 mb-5">
+                        <div class="social"><a class="social__item" href="https://x.com" target="_blank"><svg class='svg-icon '>
+                                    <use xlink:href='app/images/svg/sprite.svg#twitter'></use>
+                                </svg></a><a class="social__item" href="https://t.me/" target="_blank"><svg class='svg-icon '>
+                                    <use xlink:href='app/images/svg/sprite.svg#telegram'></use>
+                                </svg></a><a class="social__item" href="https://medium.com" target="_blank"><svg class='svg-icon  size-32'>
+                                    <use xlink:href='app/images/svg/sprite.svg#medium'></use>
+                                </svg></a></div>
+                    </div>
                 </div>
-                <div class="footer-line"></div>
             </div>
-            <p data-w-id="6e0a4b74-bd89-a600-8f27-bd02127a9333" class="paragraph-small text-center">© 2025 All
-                Rights Reserved | Ocean Funds
-            </p>
         </div>
     </div>
-</section>
-</div>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"1e9d8afe95c748ecbe8fa121b1ca3021","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="{{ asset('') }}assets/app/js/script.min.js"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"504d5c32df51454c8b5b363803bd9474","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
-
-</html>
-<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=687b1e181baaf79fcff18cdc"
-    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-    crossorigin="anonymous"></script>
-<script src="https://cdn.prod.website-files.com/687b1e181baaf79fcff18cdc/js/webflow.schunk.9b79167770a1f7a0.js"
-    type="text/javascript"></script>
-<script src="https://cdn.prod.website-files.com/687b1e181baaf79fcff18cdc/js/webflow.schunk.fdd89d1d7616e6e2.js"
-    type="text/javascript"></script>
-<script src="https://cdn.prod.website-files.com/687b1e181baaf79fcff18cdc/js/webflow.9634d32b.8b5fbd3b109c466a.js"
-    type="text/javascript"></script>    </div>
-</body>
-@include('partials.notify')
 
 </html>
