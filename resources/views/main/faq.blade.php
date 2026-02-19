@@ -67,7 +67,7 @@
                         <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-affiliate"><svg class="svg-icon size-24 ">
                                     <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Affiliate</span></a></li>
-                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=support.html"><svg class="svg-icon size-24 ">
+                        <li class="nav-item"><a class="nav-link " href="{{ route('contact-us') }}"><svg class="svg-icon size-24 ">
                                     <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Support</span></a></li>
                     </ul>
@@ -94,7 +94,7 @@
                         <li class="nav-item"><a class="nav-link  " href="{{ route('faq') }}"><span>Faq</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-plans"><span>Our Plans</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-affiliate"><span>Affiliate</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="index%EF%B9%96a=support.html"><span>Support</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('contact-us') }}"><span>Support</span></a></li>
                     </ul>
                     <div class="sd-header__btns d-flex d-lg-none ms-auto"><a class="button button--empty" data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">Menu</a></div>
                     <div class="sd-header__btns ms-auto d-none d-lg-flex"><a href="index%EF%B9%96a=login.html" class="button button--empty"><span>Login</span></a>

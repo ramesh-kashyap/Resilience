@@ -71,7 +71,7 @@
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Affiliate</span></a></li>
-                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=support.html"><svg
+                        <li class="nav-item"><a class="nav-link " href="{{ route('contact-us') }}"><svg
                                     class="svg-icon size-24 ">
                                     <use xlink:href="{{ asset('') }}assets/app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Support</span></a></li>
@@ -106,7 +106,7 @@
                         <li class="nav-item"><a class="nav-link"
                                 href="#sd-affiliate"><span>Affiliate</span></a></li>
                         <li class="nav-item"><a class="nav-link"
-                                href="index%EF%B9%96a=support.html"><span>Support</span></a></li>
+                                href="{{ route('contact-us') }}"><span>Support</span></a></li>
                     </ul>
                     <div class="sd-header__btns d-flex d-lg-none ms-auto"><a class="button button--empty"
                             data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">Menu</a></div>
