@@ -55,7 +55,7 @@
                         <li class="nav-item"><a class="nav-link " href="{{ route('Index') }}"><svg class="svg-icon size-24 ">
                                     <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('about-us') }}#sd-about"><svg class="svg-icon size-24 ">
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-about"><svg class="svg-icon size-24 ">
                                     <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
                                 </svg><span>About Us</span></a></li>
                         <li class="nav-item"><a class="nav-link " href="{{ route(name: 'faq') }}"><svg class="svg-icon size-24 ">
@@ -90,7 +90,7 @@
                 <nav class="sd-header__top"><a href="index%EF%B9%96a=home.html" class="sd-header__logo col-auto"><img src="app/images/svg/logo.svg"></a>
                     <ul class="navbar-menu ms-xl-8 me-auto d-none d-lg-flex w-auto">
                         <li class="nav-item d-none d-xl-block"><a class="nav-link " href="{{ route('Index') }}"><span>Home</span></a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('about-us') }}#sd-about"><span>About Us</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-about"><span>About Us</span></a></li>
                         <li class="nav-item"><a class="nav-link  " href="{{ route('faq') }}"><span>Faq</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-plans"><span>Our Plans</span></a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('Index') }}#sd-affiliate"><span>Affiliate</span></a></li>
