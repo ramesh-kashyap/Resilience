@@ -1,370 +1,425 @@
+<!-- HyipZona.com Studio: Expert in Turnkey HYIP Project Development -->
+
 <!DOCTYPE html>
-<html data-wf-domain="dyxor.webflow.io" data-wf-page="687f6ebea30244ec19600249" data-wf-site="687b1e181baaf79fcff18cdc"
-    lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Register - Unique World</title>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="css/style%EF%B9%96201.css" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
-    <link href="images/fv.png" rel="shortcut icon" type="image/x-icon" />
+    <meta charset="utf-8">
+    <title>Sign Up | Template 32</title>
+    <!--<base href="https://gc.hyipzona.com/template-32/" src="https://gc.hyipzona.com/template-32/" />-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="og:locale" content="en-US">
+    <link rel="icon" type="image/x-icon" href="app/images/favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="app/images/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="app/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="app/images/favicons/favicon-48x48.png">
+    <link rel="manifest" href="https://gc.hyipzona.com/template-32/app/images/favicons/manifest.webmanifest">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#fff">
+    <meta name="application-name">
+    <link rel="apple-touch-icon" sizes="57x57" href="app/images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="app/images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="app/images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="app/images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="app/images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="app/images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="app/images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="app/images/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="app/images/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/images/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="app/images/favicons/apple-touch-icon-1024x1024.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="app/images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="app/images/favicons/browserconfig.xml">
+    <link rel="yandex-tableau-widget" href="app/images/favicons/yandex-browser-manifest.json">
+    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
-<style>
-    :root {
-        --primary-green: #00894d;
-        --primary-hover: #007a44;
-        --dark-bg: #1a1a1a;
-        --card-bg: #161616;
-        --border-color: #404040;
-        --text-muted: #9ca3af;
-        --success-color: #10b981;
-        --warning-color: #f59e0b;
-        --danger-color: #ef4444;
-        --gradient-primary: linear-gradient(135deg, #00894d, #10b981);
-        --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        --transition: all 0.3s ease;
-        --glow: 0 0 20px rgba(0, 137, 77, 0.3);
-    }
 
-    /* Enhanced Form Controls */
-    .form-control {
-        background: var(--section-color);
-        border: 2px solid var(--border-color);
-        border-radius: 12px;
-        color: #ffffff;
-        padding: 1rem 1.2rem;
-        font-size: 1rem;
-        transition: var(--transition);
-        height: auto;
-    }
-
-    .form-control:focus {
-        background: var(--dark-bg);
-        border-color: var(--primary-green);
-        box-shadow: 0 0 0 0.25rem rgba(0, 137, 77, 0.15), var(--glow);
-        color: #ffffff;
-        transform: translateY(-1px);
-    }
-
-    .form-control::placeholder {
-        color: var(--text-muted);
-    }
-
-    /* PIN Code Container */
-    .pin-code-container {
-        display: flex;
-        gap: 12px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .pin-code-input {
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        font-size: 24px;
-        font-weight: 600;
-        background: var(--card-bg);
-        border: 2px solid var(--border-color);
-        border-radius: 12px;
-        color: #ffffff;
-        transition: var(--transition);
-    }
-
-    .pin-code-input:focus {
-        background: var(--dark-bg);
-        border-color: var(--primary-green);
-        box-shadow: 0 0 0 0.25rem rgba(0, 137, 77, 0.15), var(--glow);
-        outline: none;
-        transform: scale(1.05);
-    }
-
-    .pin-code-input::placeholder {
-        color: var(--text-muted);
-    }
-</style>
-
-<body class="body color-left">
-    <div class="page-wrapper"></div>
-
-    <div class="section"
-        style="background: url('images/rd_1.png') no-repeat center center/cover; 
-            min-height: 100vh; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            padding-top: 50px !important; 
-            padding-bottom: 50px !important;">
-
-        <div class="container w-password-page w-form">
-            <form action="{{ route('registers') }}" method="post" id="email-form" name="email-form"
-                class="utility-page-form w-password-page">  
-                @csrf
-
-               <?php 
-                $sponsor = request()->query('ref', '');
-                $name = \App\Models\User::where('username', $sponsor)->first();
-
-               ?>
-
-                <div class="password-icom-wrap">
-                    <a href="{{asset('')}}">
-                        <img style="width:auto;height:80px" src="{{asset('')}}assets\images\unique-world.png" alt="Logo" class="password-icon" />
-                    </a>
-                </div>
-                <div class="password-text-wrap">
-                    <h1 class="h3 mobile-text-center">Signup</h1>
-                    <label class="paragraph-large text-center w-password-page">
-                        Signup Your Account
-                    </label>
-                </div>
-                <div class="password-bottom">
-                     <div >
-                        <input class="text-field password w-password-page w-input check_sponsor_exist" data-response="usernameExist" maxlength="256" name="sponsor"
-                            placeholder="Referral Code" type="text" value="{{$sponsor}}" required />
-                    </div>
-                    <small id="usernameExist"><?= $name ? $name->name : '' ?></small>
-                    <div style="padding-top: 10px;">
-                        <input class="text-field password w-password-page w-input" maxlength="256" name="name"
-                            placeholder="Full Name" type="text" value="" required />
-                    </div>
-                   
-                    <div style="padding-top: 20px;">
-                        <input class="text-field password w-password-page w-input" maxlength="256" name="email"
-                            placeholder="Enter your Email" type="email"   id="email" value="" required />
-                    </div>
-                    
-                    <div style="padding-top: 20px;">
-    <div style="position: relative;">
-
-        <!-- Verification Code Input -->
-        <input
-            class="text-field password w-password-page w-input"
-            maxlength="6"
-            name="code"
-            placeholder="Enter Verification Code"
-            type="text"
-            required
-            style="padding-right: 90px;"
-        />
-
-        <!-- Send Button inside input -->
-        <button
-            type="button"
-           id="otpBtn" onclick="sendOtp('otpBtn')"
-            style="
-                position: absolute;
-                right: 6px;
-                top: 50%;
-                transform: translateY(-50%);
-                height: 32px;
-                padding: 0 14px;
-                background-color: #4CAF50;
-                color: #fff;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                font-size: 13px;
-            "
-        >
-            Send
-        </button>
-
-    </div>
-</div>
-                    
-                    
-                                     <div style="padding-top: 20px; position: relative;">
-    <span
-        style="
-            position: absolute;
-            left: 12px;
-            top: 64%;
-            transform: translateY(-50%);
-            color: #999;
-            font-size: 14px;
-        "
-    >
-        +91
-    </span>
-
-    <input
-        class="text-field password w-password-page w-input"
-        name="phone"
-        placeholder="Enter your phone number"
-        type="text"
-        style="padding-left: 45px;"
-        maxlength="10"
-        required
-        oninput="this.value=this.value.replace(/[^0-9]/g,'').slice(0,10)"
-    />
-</div>
-
-                    <div style="padding-top: 20px;">
-                        <input class="text-field password w-password-page w-input" maxlength="256" name="password"
-                            placeholder="Enter your Password" type="password" required />
-                    </div>
-                    <div style="padding-top: 20px;">
-                        <input class="text-field password w-password-page w-input" maxlength="256"
-                            name="password_confirmation" placeholder="Confirm your Password" type="password" required />
-                    </div>
-
-
-                    <div style="padding-top: 20px;">
-                        <input type="submit" value="Register" style="width: 100%; cursor: pointer;"
-                            class="submit-button" name="submit" />
-                    </div>
-                    <div style="padding-top: 15px; text-align: center; font-size: 14px;">
-                        Already have an account?
-                        <a href="{{route('login')}}" style="text-decoration: none; color: #00ff8f">Login</a>
+<body>
+    <div class="sd-wrapper sd-wrapper--form">
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="Id2"
+            aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header"><button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button></div>
+            <div class="offcanvas-body">
+                <div class="w-100 d-flex flex-column">
+                    <ul class="navbar-menu navbar-menu--offcanvas mb-auto">
+                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=home.html"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#sd-about"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>About Us</span></a></li>
+                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=faq.html"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Faq</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#sd-plans"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Our Plans</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#sd-affiliate"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Affiliate</span></a></li>
+                        <li class="nav-item"><a class="nav-link " href="index%EF%B9%96a=support.html"><svg
+                                    class="svg-icon size-24 ">
+                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg><span>Support</span></a></li>
+                    </ul>
+                    <div class="d-flex row gx-1">
+                        <div class="col"><a href="index%EF%B9%96a=login.html" class="button button--outline1 w-100  ">
+                                <div class="round"></div><span>Login</span>
+                            </a></div>
+                        <div class="col"><a href="index%EF%B9%96a=signup.html" class="button button--primary w-100 ">
+                                <div class="round"></div><svg class='svg-icon me-2'>
+                                    <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
+                                </svg><span>Sign Up</span>
+                            </a></div>
                     </div>
                 </div>
-            </form>
+            </div>
+        </div>
+        <div id="animation-area" class="sd-area"></div>
+        <header class='sd-header sd-section '>
+            <div class="container">
+                <nav class="sd-header__top"><a href="index%EF%B9%96a=home.html" class="sd-header__logo col-auto"><img
+                            src="app/images/svg/logo.svg"></a>
+                    <ul class="navbar-menu ms-xl-8 me-auto d-none d-lg-flex w-auto">
+                        <li class="nav-item d-none d-xl-block"><a class="nav-link "
+                                href="index%EF%B9%96a=home.html"><span>Home</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#sd-about"><span>About Us</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link  " href="index%EF%B9%96a=faq.html"><span>Faq</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.html#sd-plans"><span>Our Plans</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="index.html#sd-affiliate"><span>Affiliate</span></a></li>
+                        <li class="nav-item"><a class="nav-link"
+                                href="index%EF%B9%96a=support.html"><span>Support</span></a></li>
+                    </ul>
+                    <div class="sd-header__btns d-flex d-lg-none ms-auto"><a class="button button--empty"
+                            data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2">Menu</a></div>
+                    <div class="sd-header__btns ms-auto d-none d-lg-flex"><a href="index%EF%B9%96a=login.html"
+                            class="button button--empty"><span>Login</span></a>
+                        <div class="sd-header__btn-devider"><span>or</span></div><a href="index%EF%B9%96a=signup.html"
+                            class="button button--empty"><svg class='svg-icon me-2'>
+                                <use xlink:href='app/images/svg/sprite.svg#icon-key'></use>
+                            </svg><span>Sign Up</span></a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="sd-section sd-form pb-8">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-8 order-2 order-lg-1">
+                        <div class="sd-form__left">
+                            <script language=javascript>
+                                function checkform() {
+                                    if (document.regform.fullname.value == '') {
+                                        alert("Please enter your full name!");
+                                        document.regform.fullname.focus();
+                                        return false;
+                                    }
+                                    if (document.regform.username.value == '') {
+                                        alert("Please enter your username!");
+                                        document.regform.username.focus();
+                                        return false;
+                                    }
+                                    if (!document.regform.username.value.match(/^[A-Za-z0-9_\-]+$/)) {
+                                        alert("For username you should use English letters and digits only!");
+                                        document.regform.username.focus();
+                                        return false;
+                                    }
+                                    if (document.regform.password.value == '') {
+                                        alert("Please enter your password!");
+                                        document.regform.password.focus();
+                                        return false;
+                                    }
+                                    if (document.regform.password.value != document.regform.password2.value) {
+                                        alert("Please check your password!");
+                                        document.regform.password2.focus();
+                                        return false;
+                                    }
+                                    if (document.regform.email.value == '') {
+                                        alert("Please enter your e-mail address!");
+                                        document.regform.email.focus();
+                                        return false;
+                                    }
+                                    if (document.regform.email.value != document.regform.email1.value) {
+                                        alert("Please retype your e-mail!");
+                                        document.regform.email.focus();
+                                        return false;
+                                    }
+
+                                    for (i in document.regform.elements) {
+                                        f = document.regform.elements[i];
+                                        if (f.name && f.name.match(/^pay_account/)) {
+                                            if (f.value == '') continue;
+                                            var notice = f.getAttribute('data-validate-notice');
+                                            var invalid = 0;
+                                            if (f.getAttribute('data-validate') == 'regexp') {
+                                                var re = new RegExp(f.getAttribute('data-validate-regexp'));
+                                                if (!f.value.match(re)) {
+                                                    invalid = 1;
+                                                }
+                                            } else if (f.getAttribute('data-validate') == 'email') {
+                                                var re = /^[^\@]+\@[^\@]+\.\w{2,4}$/;
+                                                if (!f.value.match(re)) {
+                                                    invalid = 1;
+                                                }
+                                            }
+                                            if (invalid) {
+                                                alert('Invalid account format. Expected ' + notice);
+                                                f.focus();
+                                                return false;
+                                            }
+                                        }
+                                    }
+
+                                    if (document.regform.agree.checked == false) {
+                                        alert("You have to agree with the Terms and Conditions!");
+                                        return false;
+                                    }
+
+                                    return true;
+                                }
+
+                                function IsNumeric(sText) {
+                                    var ValidChars = "0123456789";
+                                    var IsNumber = true;
+                                    var Char;
+                                    if (sText == '') return false;
+                                    for (i = 0; i < sText.length && IsNumber == true; i++) {
+                                        Char = sText.charAt(i);
+                                        if (ValidChars.indexOf(Char) == -1) {
+                                            IsNumber = false;
+                                        }
+                                    }
+                                    return IsNumber;
+                                }
+
+                            </script>
+                            <form method="post" onsubmit="return checkform()" name="regform" class="position-relative">
+                                <input type="hidden" name="form_id" value="17713294233809"><input type="hidden"
+                                    name="form_token" value="f743fed02fa564a2a79ce3482ee09b5f"><input type="hidden"
+                                    name="a" value="signup"><input type="hidden" name="action" value="signup">
+                                <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h3 class="title ">Your Wallets</h3><button type="button"
+                                                    class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="form-group "><label><i class="form-icon"><img
+                                                                        src="app/images/svg/ps-48.svg" height="24"
+                                                                        width="24"></i><span>Bitcoin</span></label><input
+                                                                type="text" class="form-control" name="pay_account[48]"
+                                                                value="" data-validate="regexp"
+                                                                data-validate-regexp="^(bc1|[13])[a-zA-HJ-NP-Z0-9]{25,39}$"
+                                                                data-validate-notice="Bitcoin Address"
+                                                                placeholder="1YourBitcoinAddressmwGAiHnxQWP8J2"></div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group "><label><i class="form-icon"><img
+                                                                        src="app/images/svg/ps-85.svg" height="24"
+                                                                        width="24"></i><span>Tron</span></label><input
+                                                                type="text" class="form-control" name="pay_account[85]"
+                                                                value="" data-validate="regexp"
+                                                                data-validate-regexp="^T[a-km-zA-HJ-NP-Z1-9]{25,34}$"
+                                                                data-validate-notice="Tron Address"
+                                                                placeholder="TYourAddressom8sKutrbHcDKtHjRHFbGKw"></div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group "><label><i class="form-icon"><img
+                                                                        src="app/images/svg/ps-92.svg" height="24"
+                                                                        width="24"></i><span>Tether
+                                                                    TRC20</span></label><input type="text"
+                                                                class="form-control" name="pay_account[92]" value=""
+                                                                data-validate="regexp"
+                                                                data-validate-regexp="^T[a-km-zA-HJ-NP-Z1-9]{25,34}$"
+                                                                data-validate-notice="Tether TRC20 Address"
+                                                                placeholder="TYourTetherTRC20AddressmwbeKmGQV1X5ddeh87">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-group "><label><i class="form-icon"><img
+                                                                        src="app/images/svg/ps-102.svg" height="24"
+                                                                        width="24"></i><span>Tether
+                                                                    BEP20</span></label><input type="text"
+                                                                class="form-control" name="pay_account[102]" value=""
+                                                                data-validate="regexp"
+                                                                data-validate-regexp="^(0x)?[0-9a-fA-F]{40}$"
+                                                                data-validate-notice="Tether BEP20 Address"
+                                                                placeholder="0xYourTetherBEP20AddressmwbeKmGQV1X5ddeh87">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer"><a class="button button--outline1 ms-auto"
+                                                    type="button" data-bs-dismiss="modal"><svg
+                                                        class='svg-icon size-16 red me-2 ms-n2'>
+                                                        <use xlink:href='app/images/svg/sprite.svg?1723368616#close'>
+                                                        </use>
+                                                    </svg><span>Close</span></a><button type="submit"
+                                                    class="button button--primary">
+                                                    <div class="round"></div><span> Register</span>
+                                                </button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gx-4">
+                                    <div class="col-md-6">
+                                        <div class="form-group  has-feedback"><label><i class="form-icon"><svg
+                                                        class="svg-icon size-16">
+                                                        <use xlink:href="app/images/svg/sprite.svg?1723368616#username">
+                                                        </use>
+                                                    </svg></i><span>Username </span></label><input type="text"
+                                                name="username" value='' class="form-control" placeholder="Cameron93"
+                                                required /></div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group has-feedback"><label><i class="form-icon"><svg
+                                                        class="svg-icon size-16">
+                                                        <use xlink:href="app/images/svg/sprite.svg?1723368616#username">
+                                                        </use>
+                                                    </svg></i><span>Full Name</span></label><input type="text"
+                                                name="fullname" value='' class="form-control"
+                                                placeholder="Cameron Powell" required /></div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group has-feedback"><label><i class="form-icon"><svg
+                                                        class="svg-icon size-16">
+                                                        <use xlink:href="app/images/svg/sprite.svg?1723368616#password">
+                                                        </use>
+                                                    </svg></i><span>Define Password </span></label><input
+                                                type="password" name="password" value='' class="form-control"
+                                                placeholder="******" required /></div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group has-feedback"><label><i class="form-icon"><svg
+                                                        class="svg-icon size-16">
+                                                        <use xlink:href="app/images/svg/sprite.svg?1723368616#password">
+                                                        </use>
+                                                    </svg></i><span>Retype Password </span></label><input
+                                                type="password" name="password2" value='' class="form-control"
+                                                placeholder="******" required /></div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="form-group has-feedback"><label><i class="form-icon"><svg
+                                                        class="svg-icon size-16">
+                                                        <use xlink:href="app/images/svg/sprite.svg?1723368616#email1">
+                                                        </use>
+                                                    </svg></i><span>E-mail </span></label><input type="text"
+                                                name="email" value='' class="form-control"
+                                                placeholder="сameron93@gmail.com" required /></div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="form-group has-feedback"><label><i class="form-icon"><svg
+                                                        class="svg-icon size-16">
+                                                        <use xlink:href="app/images/svg/sprite.svg?1723368616#email1">
+                                                        </use>
+                                                    </svg></i><span>Retype E-mail </span></label><input type="text"
+                                                name="email1" value='' class="form-control"
+                                                placeholder="сameron93@gmail.com"></div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="form-group has-feedback"><label><i class="form-icon"><svg
+                                                        class="svg-icon size-16">
+                                                        <use xlink:href="app/images/svg/sprite.svg?1723368616#keyboard">
+                                                        </use>
+                                                    </svg></i><span>Secret Question </span></label><input type="text"
+                                                name="sq" value="" placeholder="Your question" class='form-control'
+                                                required /></div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="form-group has-feedback"><label><i class="form-icon"><svg
+                                                        class="svg-icon size-16">
+                                                        <use xlink:href="app/images/svg/sprite.svg?1723368616#keyboard">
+                                                        </use>
+                                                    </svg></i><span>Secret Answer </span></label><input type="text"
+                                                name="sa" value="" class='form-control' placeholder="Your answer"
+                                                required /></div>
+                                    </div>
+                                </div>
+                                <div class="mb-4"></div>
+                                <div class="col-xl-12">
+                                    <div class="form-group"><label><span>Invited by</span></label><input type="text"
+                                            value="n/a" readonly="" class="form-control"></div>
+                                </div>
+                                <div class="form-check form-switch mb-4"><input class="form-check-input" name=agree
+                                        value=1 checked type="checkbox" id="flexSwitchCheckChecked" checked /><label
+                                        class="form-check-label" for="flexSwitchCheckChecked">
+                                        <p class="s17 medium">I agree with <a href="index%EF%B9%96a=rules.html"
+                                                target="_blank">Terms and Conditions</a> </p>
+                                    </label></div>
+                                <hr class="sd-devider mb-5">
+                                <div class="d-sm-flex align-items-center"><button
+                                        class="button button--primary me-sm-3 mb-2 mb-sm-0  w-100 " type=submit>
+                                        <div class="round"></div><span> Register</span>
+                                    </button><button type="button" class="button button--outline1  w-100 "
+                                        data-bs-toggle="modal" data-bs-target="#modalId"><svg
+                                            class='svg-icon primary size-16 ms-n2 me-2'>
+                                            <use xlink:href='app/images/svg/sprite.svg?1723368616#plus'></use>
+                                        </svg><span>Add Payment System</span></button></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-1 order-lg-2">
+                        <h5 class="title  title--light title--right title--other  mb-4"><span>Sign Up</span><img
+                                src="app/images/svg/h5-header-svg-v3.svg"></h5>
+                        <h2 class="title title--light mb-5">Create Account</h2>
+                        <p class="s18 mb-5 ">Complete your registration and start your journey towards successful
+                            cryptocurrency investment with us.</p>
+                        <div class="d-none d-lg-block">
+                            <hr class="sd-devider sd-devider--v1 mb-5">
+                            <h4 class="title title-gradient-1 mb-5">Already registered?</h4><a
+                                href="index%EF%B9%96a=login.html" class="button button--secondary me-auto  mt-auto">
+                                <div class="round"></div><span class="me-2">Log In</span><svg
+                                    class="svg-icon size-small ">
+                                    <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 d-block d-lg-none order-3 pt-6">
+                        <h4 class="title title-gradient-1 mb-4">Already registered?</h4><a
+                            href="index%EF%B9%96a=login.html" class="button button--secondary me-auto  mt-auto">
+                            <div class="round"></div><span class="me-2">Log In</span><svg class="svg-icon size-small ">
+                                <use xlink:href="app/images/svg/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+    <script src="app/js/script.min.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
         integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-        data-cf-beacon='{"version":"2024.11.0","token":"1e9d8afe95c748ecbe8fa121b1ca3021","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        data-cf-beacon='{"version":"2024.11.0","token":"504d5c32df51454c8b5b363803bd9474","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
 </body>
 
 </html>
-    <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
-    @include('partials.notify')
-
-
-   <script>
-        $('.check_sponsor_exist').keyup(function(e) {
-            var ths = $(this);
-            var res_area = $(ths).attr('data-response');
-            var sponsor = $(this).val();
-            // alert(sponsor); 
-            $.ajax({
-                type: "POST",
-                url: "{{ route('getUserName') }}",
-                data: {
-                    "user_id": sponsor,
-                    "_token": "{{ csrf_token() }}",
-                },
-                success: function(response) {
-                    // alert(response);      
-                    if (response != 1) {
-                        // alert("hh");
-                        $(".submit-btn").prop("disabled", false);
-                        $('#' + res_area).html(response).css('color', '#fff').css('font-weight', '800')
-                            .css('margin-buttom', '10px');
-                    } else {
-                        // alert("hi");
-                        $(".submit-btn").prop("disabled", true);
-                        $('#' + res_area).html("Sponsor ID Not exists!").css('color', 'red').css(
-                            'margin-buttom', '10px');
-                    }
-                }
-            });
-        });
-    </script>
-
-<script>
-    const inputs = document.querySelectorAll('.pin-code-input');
-
-    inputs.forEach((input, key) => {
-        // Focus on first input when clicking on any empty input
-        if (key !== 0) {
-            input.addEventListener("click", function() {
-                if (!inputs[0].value) {
-                    inputs[0].focus();
-                }
-            });
-        }
-
-        // Handle keyup event
-        input.addEventListener("keyup", function(e) {
-            if (input.value) {
-                if (key === 3) {
-                    // Last input - combine all values
-                    const userCode = [...inputs].map((inp) => inp.value).join("");
-                    document.getElementById("pin_code").value = userCode;
-                    input.blur(); // Remove focus from last input
-                } else {
-                    // Move to next input
-                    inputs[key + 1].focus();
-                }
-            }
-        });
-
-        // Handle backspace
-        input.addEventListener("keydown", function(e) {
-            if (e.key === "Backspace" && !input.value && key !== 0) {
-                inputs[key - 1].focus();
-            }
-        });
-
-        // Only allow numbers
-        input.addEventListener("input", function(e) {
-            this.value = this.value.replace(/[^0-9]/g, '');
-        });
-    });
-</script>
-<script>
-function sendOtp(id) {
-
-    const button = document.getElementById(id);
-    const email  = document.getElementById('email').value.trim();
-
-    // Validate email
-    if (!email) {
-        notify('error', 'Please enter email first');
-        return;
-    }
-
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
-        notify('error', 'Please enter valid email');
-        return;
-    }
-
-    // Disable button
-    button.disabled = true;
-
-    let seconds = 60;
-    button.innerText = `${seconds}s`;
-
-    const countdown = setInterval(() => {
-        seconds--;
-        button.innerText = `${seconds}s`;
-
-        if (seconds <= 0) {
-            clearInterval(countdown);
-            button.disabled = false;
-            button.innerText = 'Resend';
-        }
-    }, 1000);
-
-    // Send OTP request with email
-    fetch("{{ route('sendOtp') }}", {
-        method: 'POST',
-        headers: {
-            'X-CSRF-TOKEN': '{{ csrf_token() }}',
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ email: email })
-    })
-    .then(res => res.json())
-    .then(data => {
-        if (data.status === 'success') {
-            notify('success', data.message || 'OTP sent successfully');
-        } else {
-            throw new Error(data.message);
-        }
-    })
-    .catch(err => {
-        clearInterval(countdown);
-        button.disabled = false;
-        button.innerText = 'Send';
-        notify('error', 'Failed to send OTP');
-        console.error(err);
-    });
-}
-</script>
